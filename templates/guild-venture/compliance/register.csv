@@ -1,0 +1,2 @@
+# as_of: 2026-09-02
+id,obligation,category,applies_if,agency,cadence,deadline_rule,evidence_type,evidence_path,evidence_date,evidence_hash,status,owner,requires_professional_signoff,signoff_path,source_url,source_grade,verified_on,notes

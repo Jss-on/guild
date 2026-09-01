@@ -273,11 +273,21 @@ validate() {
   [[ "$ok" -eq 1 ]] && return 0 || return 1
 }
 
-# paying_count <pipeline.tsv> → number of won rows with BOTH invoice id and payment evidence
+# paying_count <pipeline.tsv> → number of won rows with BOTH invoice id and payment evidence.
+# Header-aware: locates the stage / invoice / payment columns by name (the full deals schema of
+# gtm-protocol.md or the 10-column verdict view); falls back to positions 4/9/10 when the file
+# has no header row.
 paying_count() {
   awk -F'\t' '
-    /^#/ { next } $1 == "id" { next } NF < 10 { next }
-    $4 == "won" && $9 != "" && $9 != "-" && $10 ~ /^evidence:/ { c++ }
+    /^#/ { next }
+    !hdr && ($1 == "id" || $1 == "deal_id") {
+      hdr = 1
+      for (i = 1; i <= NF; i++) { if ($i == "stage") cs = i; if ($i == "invoice") ci = i; if ($i == "payment") cp = i }
+      next
+    }
+    { if (!cs) { cs = 4; ci = 9; cp = 10 } }
+    NF < cp { next }
+    $cs == "won" && $ci != "" && $ci != "-" && $cp ~ /^evidence:/ { c++ }
     END { print c + 0 }' "$1"
 }
 
