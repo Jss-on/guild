@@ -1,0 +1,5 @@
+# as_of: 2026-09-02
+# PLANTED DEFECT (dossier §4, pricing): eight_pct_elected while VAT-registered — the 8 % option is
+# only available to non-VAT individuals (RMO 23-2018).
+entity_type,vat_registered,eight_pct_elected,trailing_12m_gross_sales,cor_date
+sole_prop,true,true,2500000,2025-03-10

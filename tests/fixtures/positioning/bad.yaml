@@ -1,0 +1,53 @@
+# as_of: 2026-09-02
+# PLANTED DEFECTS (dossier §4, positioning): primary_alternative "Zoho Inventory" is not in the
+# alternatives ledger (a phantom competitor); "simple and affordable" as the differentiator (banned
+# adjectives, resolves to no attribute); a 90-word statement (need and target_text run past 25 words
+# each). Extra defects the gate must also name: create_new_game with no education budget; a value
+# theme with no proof; an attribute lacking only a non-existent ALT-9; two pillars.
+version: 1
+date: 2026-08-28
+statement:
+  target: smb-mfg
+  target_text: "Luzon and Visayas manufacturers, distributors, cold-storage operators and trading firms with 20 to 500 staff who still count stock by hand on printed sheets every month and re-key the totals into a spreadsheet"
+  need: "need a faster, simpler, more affordable way to count stock, reconcile it with the ERP, catch shrinkage, satisfy the auditors and free the warehouse team from overtime at month-end"
+  product: Countline
+  category: vision-counting platform
+  benefit: T-1
+  primary_alternative: Zoho Inventory
+  differentiator: simple and affordable
+attributes:
+  - id: A-1
+    text: "counts pallets nightly with a fixed camera rig and reconciles against the ERP"
+    lacking_alt_ids: [ALT-1, ALT-2]
+  - id: A-2
+    text: "AI-powered counting"
+    lacking_alt_ids: [ALT-9]
+value_themes:
+  - id: T-1
+    statement: "month-end variance under 1 % without a second counting shift"
+    attr_ids: [A-1]
+    pain_gain_ids: [PG-1]
+    proof_ids: [PR-1]
+  - id: T-2
+    statement: "the best inventory experience in the Philippines"
+    attr_ids: [A-2]
+    pain_gain_ids: [PG-2]
+    proof_ids: []
+category_decision:
+  style: create_new_game
+  category: vision-counting platform
+  education_budget_php: 0
+trend: "computer vision is cheap now"
+messaging:
+  value_statement: "Stock counts that match the books, every night."
+  pillars:
+    - name: Nightly reconciliation
+      capability: camera counts diffed against the ERP every night
+      benefit: no second counting shift
+      theme_id: T-1
+      proof_ids: [PR-1]
+    - name: AI counting
+      capability: AI-powered counting
+      benefit: better counts
+      theme_id: T-7
+      proof_ids: []

@@ -1,0 +1,6 @@
+# as_of: 2026-09-02
+# PLANTED DEFECT: trailing 12-month gross sales above the ₱3,000,000 VAT threshold while not
+# VAT-registered, with the 8 % option still elected — registration is compulsory and the 8 % option
+# lapses from the breach date (RMO 23-2018; NIRC §236).
+entity_type,vat_registered,eight_pct_elected,trailing_12m_gross_sales,cor_date
+sole_prop,false,true,3400000,2025-03-10

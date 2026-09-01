@@ -1,0 +1,110 @@
+# as_of: 2026-09-02
+# PLANTED DEFECTS (dossier §4, offers): two discovery offers; Good priced above Better; a guarantee
+# without cap (best); missing tax note (better). Extra defects the gate must also name: discovery B
+# priced at 0.9 % of the build value; a 90-day credit deadline; first-engagement prepay 20 % with
+# Net-60 terms; hardware support_months < warranty_months; a bundle without à-la-carte; Good with an
+# empty scope_out; an 84-day pilot.
+version: 1
+date: 2026-09-01
+offers:
+  - id: X-DISC-A
+    name: Paid discovery A
+    tier: discovery
+    ladder: countline
+    price_php: 25000
+    price_basis: fixed
+    scope_in: [site walk and diagnostic]
+    scope_out: [installation]
+    deliverables: [diagnostic report]
+    duration_days: 10
+    prepay_pct: 20
+    payment_terms_days: 60
+    guarantee: {trigger: not delivered in 10 working days, remedy: refund, cap_pct: 100}
+    credit_to_next: {amount_php: 25000, deadline_days: 90}
+    hardware: false
+    first_engagement: true
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: X-DISC-B
+    name: Free-ish discovery B
+    tier: discovery
+    ladder: countline
+    price_php: 4000
+    price_basis: fixed
+    scope_in: [one call]
+    deliverables: [notes]
+    duration_days: 2
+    prepay_pct: 100
+    payment_terms_days: 0
+    hardware: false
+    first_engagement: true
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: X-GOOD
+    name: Good build priced above Better
+    tier: good
+    ladder: countline
+    price_php: 450000
+    price_basis: fixed
+    scope_in: [nightly reconciliation for one site]
+    scope_out: []
+    fence_attributes: [nightly_reconciliation]
+    deliverables: [deployed service]
+    duration_days: 45
+    prepay_pct: 50
+    payment_terms_days: 30
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: X-BETTER
+    name: Better build (no tax note)
+    tier: better
+    ladder: countline
+    price_php: 420000
+    price_basis: fixed
+    scope_in: [reconciliation plus recount app]
+    scope_out: [hardware]
+    fence_attributes: [nightly_reconciliation]
+    deliverables: [deployed service and app]
+    duration_days: 60
+    prepay_pct: 50
+    payment_terms_days: 30
+    hardware: false
+    first_engagement: false
+    bundle: false
+  - id: X-BEST
+    name: Best build (uncapped guarantee, bundle without à-la-carte, orphan support)
+    tier: best
+    ladder: countline
+    price_php: 600000
+    price_basis: fixed
+    scope_in: [everything plus the camera kit]
+    scope_out: [additional warehouses]
+    fence_attributes: [nightly_reconciliation, camera_kit_hardware]
+    deliverables: [installed kit]
+    duration_days: 75
+    prepay_pct: 50
+    payment_terms_days: 30
+    guarantee: {trigger: accuracy below the SOW threshold, remedy: unlimited rework until accepted}
+    whole_product: {install: on-site, training: 1 session, support_months: 3, warranty_months: 12, docs: runbook}
+    hardware: true
+    first_engagement: false
+    bundle: true
+    a_la_carte_available: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: X-PILOT
+    name: Twelve-week pilot
+    tier: pilot
+    ladder: countline
+    price_php: 90000
+    price_basis: fixed
+    scope_in: [one camera, one area]
+    deliverables: [pilot report]
+    duration_days: 84
+    prepay_pct: 50
+    payment_terms_days: 30
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"

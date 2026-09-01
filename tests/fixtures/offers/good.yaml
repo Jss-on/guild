@@ -1,0 +1,180 @@
+# as_of: 2026-09-02
+# offer/offers.yaml — the offer ladder of a Luzon engineering studio (Countline: camera-based
+# stock counts reconciled against the client's ERP). Layout: references/offer-protocol.md §11.
+# Paid discovery ₱25,000 (7.1 % of the ₱350k median build value, credited for 30 days), G-B-B
+# build tiers with fences and a scope_out on Good, a paid 6-week pilot, a support retainer.
+# Every price is ex-VAT and subject to EWT; guarantees carry trigger + remedy + cap.
+version: 2
+date: 2026-09-01
+offers:
+  - id: O-DISC
+    name: Stock-count diagnostic (paid discovery)
+    tier: discovery
+    ladder: countline
+    price_php: 25000
+    price_basis: fixed
+    scope_in:
+      - one-day site walk of receiving, storage and dispatch
+      - profile of the last three month-end count sheets against the ERP
+      - written diagnostic with two to three scoped next projects and fixed quotes
+    scope_out:
+      - software or hardware installation
+      - ERP configuration changes
+    fence_attributes: []
+    deliverables:
+      - diagnostic report (6–10 pages, PDF)
+      - fixed-price Good/Better/Best quotes
+    duration_days: 10
+    prepay_pct: 100
+    payment_terms_days: 0
+    guarantee:
+      trigger: diagnostic not delivered within 10 working days of the site walk
+      remedy: full refund of the diagnostic fee
+      cap_pct: 100
+    credit_to_next: {amount_php: 25000, deadline_days: 30}
+    whole_product: {install: none, training: none, support_months: 0, warranty_months: 0, docs: diagnostic report}
+    hardware: false
+    first_engagement: true
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: O-GOOD
+    name: Reconcile (software build)
+    tier: good
+    ladder: countline
+    price_php: 280000
+    price_basis: fixed
+    scope_in:
+      - nightly ERP extract and count-sheet ingestion for one site
+      - variance report emailed before the morning shift
+      - two training sessions for the warehouse and finance teams
+    scope_out:
+      - camera hardware and installation
+      - mobile recount app
+      - more than one site
+    fence_attributes: [nightly_reconciliation]
+    deliverables:
+      - deployed reconciliation service on the client's server
+      - operator runbook
+    duration_days: 45
+    prepay_pct: 50
+    payment_terms_days: 30
+    guarantee:
+      trigger: variance report not produced on 3 consecutive scheduled nights in the first 60 days
+      remedy: remediation at no charge, else refund of the final milestone
+      cap_pct: 30
+    whole_product: {install: remote, training: 2 sessions, support_months: 3, warranty_months: 3, docs: runbook}
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: O-BETTER
+    name: Reconcile + Recount (software build)
+    tier: better
+    ladder: countline
+    price_php: 420000
+    price_basis: fixed
+    scope_in:
+      - everything in Reconcile
+      - mobile recount app for spot checks
+      - variance dashboard for the finance manager
+    scope_out:
+      - camera hardware and installation
+    fence_attributes: [nightly_reconciliation, mobile_recount_app, variance_dashboard]
+    deliverables:
+      - deployed service plus mobile app and dashboard
+      - operator runbook
+    duration_days: 60
+    prepay_pct: 50
+    payment_terms_days: 30
+    guarantee:
+      trigger: variance report not produced on 3 consecutive scheduled nights in the first 60 days
+      remedy: remediation at no charge, else refund of the final milestone
+      cap_pct: 30
+    whole_product: {install: remote, training: 3 sessions, support_months: 3, warranty_months: 3, docs: runbook}
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: O-BEST
+    name: Count + Reconcile (camera kit build)
+    tier: best
+    ladder: countline
+    price_php: 600000
+    price_basis: fixed
+    scope_in:
+      - everything in Reconcile + Recount
+      - fixed camera rig for one warehouse (supplied and installed)
+      - nightly automated pallet counts feeding the reconciliation
+    scope_out:
+      - additional warehouses (quoted per site)
+    fence_attributes: [nightly_reconciliation, mobile_recount_app, variance_dashboard, camera_kit_hardware, onsite_install, support_desk_12mo]
+    deliverables:
+      - installed camera kit and deployed counting service
+      - as-built documentation and operator runbook
+    duration_days: 75
+    prepay_pct: 50
+    payment_terms_days: 30
+    guarantee:
+      trigger: counting accuracy below the acceptance threshold agreed in the SOW at handover
+      remedy: recalibration at no charge, else refund of the hardware milestone
+      cap_pct: 40
+    whole_product: {install: on-site, training: 3 sessions, support_months: 12, warranty_months: 12, docs: as-built + runbook}
+    hardware: true
+    first_engagement: false
+    bundle: true
+    a_la_carte_available: true
+    tax_note: "ex-VAT; subject to EWT"
+  - id: O-PILOT
+    name: Six-week counting pilot (one storage area)
+    tier: pilot
+    ladder: countline
+    price_php: 90000
+    price_basis: fixed
+    scope_in:
+      - one camera on one storage area
+      - nightly counts reconciled against the ERP for six weeks
+      - fixed pilot metric agreed up front (count accuracy vs manual baseline)
+    scope_out:
+      - anything beyond the one storage area
+    fence_attributes: [pilot_single_area]
+    deliverables:
+      - pilot report with measured accuracy and a go/no-go recommendation
+    duration_days: 42
+    prepay_pct: 50
+    payment_terms_days: 30
+    guarantee:
+      trigger: pilot metric not measured and reported by the pilot end date
+      remedy: refund of the pilot fee
+      cap_pct: 100
+    whole_product: {install: on-site, training: 1 session, support_months: 3, warranty_months: 3, docs: pilot report}
+    hardware: true
+    first_engagement: true
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: O-RET
+    name: Support and calibration retainer
+    tier: retainer
+    ladder: countline
+    price_php: 60000
+    price_basis: fixed
+    billing_period: monthly
+    scope_in:
+      - support desk (next-business-day response)
+      - monthly recalibration and variance-report review
+    scope_out:
+      - new feature development (quoted separately)
+    fence_attributes: [support_desk, monthly_recalibration]
+    deliverables:
+      - monthly service report
+    duration_days: 30
+    prepay_pct: 100
+    payment_terms_days: 15
+    guarantee:
+      trigger: response beyond next business day on 3 tickets in a month
+      remedy: that month's retainer credited
+      cap_pct: 100
+    whole_product: {install: n/a, training: refreshers, support_months: 12, warranty_months: 0, docs: service reports}
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"

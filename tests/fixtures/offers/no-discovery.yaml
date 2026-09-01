@@ -1,0 +1,40 @@
+# as_of: 2026-09-02
+# PLANTED DEFECT (dossier §4, offers, variant): no paid-discovery offer at all — the ladder opens
+# with a free proposal, which the harness treats as worthless unpaid selling.
+version: 1
+date: 2026-09-01
+offers:
+  - id: Y-GOOD
+    name: Good build
+    tier: good
+    ladder: countline
+    price_php: 280000
+    price_basis: fixed
+    scope_in: [nightly reconciliation for one site]
+    scope_out: [hardware]
+    fence_attributes: [nightly_reconciliation]
+    deliverables: [deployed service]
+    duration_days: 45
+    prepay_pct: 50
+    payment_terms_days: 30
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"
+  - id: Y-BETTER
+    name: Better build
+    tier: better
+    ladder: countline
+    price_php: 420000
+    price_basis: fixed
+    scope_in: [reconciliation plus recount app]
+    scope_out: [hardware]
+    fence_attributes: [nightly_reconciliation, mobile_recount_app]
+    deliverables: [deployed service and app]
+    duration_days: 60
+    prepay_pct: 50
+    payment_terms_days: 30
+    hardware: false
+    first_engagement: false
+    bundle: false
+    tax_note: "ex-VAT; subject to EWT"

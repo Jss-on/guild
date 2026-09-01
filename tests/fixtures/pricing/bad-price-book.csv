@@ -1,0 +1,21 @@
+# as_of: 2026-09-02
+# PLANTED DEFECTS (dossier §4, pricing), one per row so the gate names each: B-FLOOR list below
+# floor/(1−GM); B-STALE floor_date 120 days old; B-NEWWTP a new offer with 4 WTP rows; B-EXEMPT an
+# exempt_nonvat row while the seller is VAT-registered; B-DISPLAY a B2B row displayed inclusive;
+# B-CWT cwt 5 for a corporation; B-ZERO zero-rated without a foreign-currency client; B-DISC max
+# discount 35 % and no discount authority; B-UTIL floor at 85 % utilisation; B-HW retail hardware at
+# 2.7× COGS and 30 % GM; B-VW Van Westendorp n = 40 with the list outside PMC–PME; B-INC a +20 %
+# increase with no reason, 7 days notice and no grandfather date.
+offer_id,tier,price_metric,list_price_exvat,currency,vat_treatment,display,cost_floor_exvat,floor_method,floor_date,floor_utilization,target_gm_pct,cwt_rate_expected,buyer_type,channel,cogs_exvat,foreign_currency_client,segment_id,competitor_low,competitor_high,competitor_n,competitor_capture_date,wtp_n,wtp_pmc,wtp_opp,wtp_ipp,wtp_pme,research_method,cbc_exposures,justification_ref,max_discount_pct,discount_authority,prev_price_exvat,change_reason_text,change_notice_date,realised_pct,grandfather_until,effective_from,last_reviewed,approver
+B-FLOOR,good,fixed,200000,PHP,vatable12,exclusive,150000,loaded_hourly_estimate,2026-08-18,0.70,0.45,15,b2b,direct,-,N,smb-mfg,180000,290000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-STALE,better,fixed,420000,PHP,vatable12,exclusive,168000,loaded_hourly_estimate,2026-05-05,0.70,0.45,15,b2b,direct,-,N,smb-mfg,350000,520000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-NEWWTP,best,fixed,600000,PHP,vatable12,exclusive,240000,loaded_hourly_estimate,2026-08-18,0.70,0.45,15,b2b,direct,-,N,smb-mfg,480000,700000,3,2026-08-20,4,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-EXEMPT,good,fixed,150000,PHP,exempt_nonvat,exclusive,60000,loaded_hourly_estimate,2026-08-18,0.70,0.45,15,b2b,direct,-,N,smb-mfg,120000,200000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-DISPLAY,retainer,retainer,60000,PHP,vatable12,inclusive,32000,loaded_hourly_estimate,2026-08-18,0.70,0.45,15,b2b,direct,-,N,smb-mfg,45000,75000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-CWT,good,fixed,250000,PHP,vatable12,exclusive,100000,loaded_hourly_estimate,2026-08-18,0.70,0.45,5,b2b,direct,-,N,smb-mfg,200000,320000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-ZERO,better,milestone,8000,USD,zero_rated_108B2,exclusive,4200,loaded_hourly_estimate,2026-08-18,0.70,0.45,0,b2b,direct,-,N,smb-mfg,6500,11000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-DISC,good,fixed,250000,PHP,vatable12,exclusive,100000,loaded_hourly_estimate,2026-08-18,0.70,0.45,15,b2b,direct,-,N,smb-mfg,200000,320000,3,2026-08-20,12,-,-,-,-,interviews,-,-,35,,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-UTIL,good,fixed,250000,PHP,vatable12,exclusive,100000,loaded_hourly_estimate,2026-08-18,0.85,0.45,15,b2b,direct,-,N,smb-mfg,200000,320000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-HW,retail,per_device,60000,PHP,vatable12,inclusive,24000,landed_cost_plus,2026-08-18,-,0.30,0,b2c,retail,22000,N,smb-mfg,50000,80000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-VW,alacarte,per_device,95000,PHP,vatable12,exclusive,38000,landed_cost_plus,2026-08-18,-,0.45,15,b2b,direct,-,N,smb-mfg,80000,120000,3,2026-08-20,40,65000,72000,70000,80000,van_westendorp,-,-,10,founder,-,-,-,-,null,2026-09-01,2026-09-01,JMD
+B-INC,retainer,retainer,120000,PHP,vatable12,exclusive,48000,loaded_hourly_estimate,2026-08-18,0.70,0.45,15,b2b,direct,-,N,smb-mfg,90000,150000,3,2026-08-20,12,-,-,-,-,interviews,-,-,10,founder,100000,,2026-08-25,-,,2026-09-01,2026-09-01,JMD
