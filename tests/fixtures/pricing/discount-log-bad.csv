@@ -1,0 +1,6 @@
+# as_of: 2026-09-02
+# PLANTED DEFECTS: a pocket price at 71 % of list (beyond the 10 % max discount); a pocket price
+# below the cost floor; a quote with no approver.
+quote_id,offer_id,tier,date,list_exvat,invoiced_exvat,pocket_exvat,approver
+Q-9,O-GOOD,good,2026-08-25,280000,220000,200000,JMD
+Q-10,O-GOOD,good,2026-08-26,280000,150000,140000,

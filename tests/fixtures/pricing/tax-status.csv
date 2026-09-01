@@ -1,0 +1,4 @@
+# as_of: 2026-09-02
+# pricing/tax-status.csv — HUMAN-ENTERED tax posture (elections are BIR filings the loop never makes).
+entity_type,vat_registered,eight_pct_elected,trailing_12m_gross_sales,cor_date
+corp,true,false,3600000,2025-03-10

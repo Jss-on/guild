@@ -1,0 +1,7 @@
+# as_of: 2026-09-02
+# pricing/discount-log.csv — every quote's list → invoiced → pocket price with the approver
+# (pocket-price waterfall; Marn & Rosiello). Amounts in PHP ex-VAT.
+quote_id,offer_id,tier,date,list_exvat,invoiced_exvat,pocket_exvat,approver
+Q-1,O-GOOD,good,2026-08-25,280000,272000,268000,JMD
+Q-2,O-RET,retainer,2026-08-26,60000,60000,60000,JMD
+Q-3,O-DISC,discovery,2026-08-27,25000,25000,25000,JMD

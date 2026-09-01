@@ -1,0 +1,11 @@
+# as_of: 2026-09-02
+# pricing/competitor-band.csv — dated, hashed captures of comparable offers (≥ 3 per offer,
+# ≤ 90 days old). Hashes are of the captured page body; prices in PHP ex-VAT.
+offer_id,competitor,url,capture_date,hash,price,metric,vat_treatment
+O-GOOD,ERP partner reconciliation module,https://example.com/erp-partner,2026-08-20,9f2c1a7e5b3d4c6a8e0f1b2c3d4e5f6a,240000,fixed,vatable12
+O-GOOD,Manila systems integrator quote,https://example.com/integrator,2026-08-20,1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d,310000,fixed,vatable12
+O-GOOD,Inventory SaaS + local setup,https://example.com/saas-setup,2026-08-20,0badc0ffee15dead0badc0ffee15dead,380000,fixed,vatable12
+O-RET,ERP partner support plan,https://example.com/support-a,2026-08-20,feedfacecafebeeffeedfacecafebeef,45000,retainer,vatable12
+O-RET,Integrator support plan,https://example.com/support-b,2026-08-20,abad1deaabad1deaabad1deaabad1dea,52000,retainer,vatable12
+O-RET,Freelance maintenance retainer,https://example.com/support-c,2026-08-20,5eed5eed5eed5eed5eed5eed5eed5eed,63000,retainer,vatable12
+O-RET,Managed-service provider basic,https://example.com/support-d,2026-08-20,d00dfeedd00dfeedd00dfeedd00dfeed,75000,retainer,vatable12

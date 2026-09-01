@@ -1,0 +1,67 @@
+# as_of: 2026-09-02
+# offer/positioning.yaml — Dunford canvas + Moore statement for a Luzon engineering studio's first
+# repeatable offer (Countline: camera-based stock counts reconciled against the client's ERP).
+# Layout: references/offer-protocol.md §9. Slots may hold an id (T-n / A-n / ALT-n) or the verbatim
+# text; the gate renders the statement from the resolved texts and lints the rendering.
+version: 3
+date: 2026-08-28
+statement:
+  target: smb-mfg
+  target_text: "Luzon manufacturers with 20–200 staff who still count stock by hand"
+  need: "need a daily stock count that matches the ERP before month-end"
+  product: Countline
+  category: inventory automation for mid-size manufacturers
+  benefit: T-1
+  primary_alternative: ALT-1
+  differentiator: A-1
+attributes:
+  - id: A-1
+    text: "counts pallets nightly with a fixed camera rig and reconciles against the ERP"
+    lacking_alt_ids: [ALT-1, ALT-2, ALT-3, ALT-4]
+  - id: A-2
+    text: "on-site install and a Laguna-based hardware support desk for 12 months"
+    lacking_alt_ids: [ALT-2, ALT-3]
+  - id: A-3
+    text: "variance report emailed to the finance manager before the 8 am shift"
+    lacking_alt_ids: [ALT-1, ALT-4]
+value_themes:
+  - id: T-1
+    statement: "month-end variance under 1 % without a second counting shift"
+    attr_ids: [A-1, A-3]
+    pain_gain_ids: [PG-1, PG-3]
+    proof_ids: [PR-1, PR-2]
+  - id: T-2
+    statement: "write-offs surface the day they happen, not at the annual audit"
+    attr_ids: [A-3]
+    pain_gain_ids: [PG-2]
+    proof_ids: [PR-3]
+  - id: T-3
+    statement: "a vendor that stays: install, training and support are part of the price"
+    attr_ids: [A-2]
+    pain_gain_ids: [PG-3]
+    proof_ids: [PR-4]
+category_decision:
+  style: big_fish_small_pond
+  category: inventory automation for mid-size manufacturers
+  education_budget_php: 0
+  rationale: "buyers already search for inventory automation; the pond is Luzon manufacturers under 200 staff, where the ERP partners do not compete"
+  rejected: [head_to_head against ERP inventory modules, create_new_game as vision-counting]
+trend: "EOPT invoicing (RA 11976) is pushing SMB finance teams to keep live stock ledgers"
+messaging:
+  value_statement: "Stock counts that match the books, every night."
+  pillars:
+    - name: Nightly reconciliation
+      capability: camera counts diffed against the ERP every night
+      benefit: no second counting shift at month-end
+      theme_id: T-1
+      proof_ids: [PR-1, PR-2]
+    - name: Same-day variance
+      capability: variance report before the morning shift
+      benefit: write-offs caught the day they happen
+      theme_id: T-2
+      proof_ids: [PR-3]
+    - name: A vendor that stays
+      capability: install, training and a 12-month support desk in Laguna
+      benefit: no orphaned hardware after go-live
+      theme_id: T-3
+      proof_ids: [PR-4]

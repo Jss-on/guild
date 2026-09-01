@@ -1,0 +1,8 @@
+# as_of: 2026-09-02
+# PRIVATE COPY for tests/offer.test.sh — mirrors tests/fixtures/competitors/good-alternatives.csv
+# (owned by the market domain): ALT-1 is the status_quo row named "Manual spreadsheet counts".
+alt_id,name,type,url,why_customer_uses_it,evidence_interview_ids,lost_deal_ids
+ALT-1,Manual spreadsheet counts,status_quo,-,"count sheets keyed into Excel and reconciled at month-end; free and familiar",I-1;I-2;I-3;I-5,-
+ALT-2,Odoo Inventory via a local partner,direct,https://www.odoo.com/app/inventory,"module already licensed with the ERP; partner quotes per-user licences plus a setup fee",I-2;I-4,-
+ALT-3,In-house barcode app built by the IT staff,in_house,-,"one developer on staff; no hardware; scanning is manual and skipped on busy days",I-1;I-5,-
+ALT-4,Do nothing until the external audit,do_nothing,-,"variance is written off once a year; nobody owns the number between audits",I-3;I-6,-

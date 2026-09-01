@@ -1,0 +1,16 @@
+# as_of: 2026-09-02
+# pricing/wtp-interviews.csv — HUMAN-ENTERED willingness-to-pay conversations (Ramanujam: run the
+# sales conversation before building). Prices in PHP ex-VAT; participant ids are pseudonyms.
+interview_id,date,segment_id,offer_id,acceptable_price_php,expensive_price_php,prohibitive_price_php,feature_reaction,consent_id,entered_by
+W-1,2026-07-15,smb-mfg,O-GOOD,250000,350000,500000,wants nightly variance report first,C-01,JMD
+W-2,2026-07-17,smb-mfg,O-GOOD,300000,420000,600000,asked for mobile recount,C-02,JMD
+W-3,2026-07-21,smb-mfg,O-BETTER,380000,450000,650000,dashboard for finance manager,C-03,JMD
+W-4,2026-07-24,smb-mfg,O-BETTER,400000,500000,700000,two sites eventually,C-04,JMD
+W-5,2026-07-28,smb-mfg,O-BEST,550000,650000,900000,camera kit must include install,C-05,JMD
+W-6,2026-07-31,smb-mfg,O-BEST,600000,700000,950000,asked who maintains the cameras,C-06,JMD
+W-7,2026-08-04,smb-mfg,O-DISC,20000,30000,60000,would pay for a diagnostic with quotes,C-07,JMD
+W-8,2026-08-06,smb-mfg,O-DISC,25000,35000,50000,wants credit toward the build,C-08,JMD
+W-9,2026-08-11,smb-mfg,O-RET,50000,70000,120000,support desk is the deciding factor,C-09,JMD
+W-10,2026-08-13,smb-mfg,O-RET,60000,80000,100000,monthly recalibration valued,C-10,JMD
+W-11,2026-08-18,smb-mfg,O-PILOT,80000,100000,150000,pilot before committing a warehouse,C-11,JMD
+W-12,2026-08-20,smb-mfg,O-KIT,40000,60000,90000,device alone if software already built,C-12,JMD

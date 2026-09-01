@@ -1,0 +1,46 @@
+# as_of: 2026-09-02
+# PRIVATE COPY for tests/offer.test.sh — mirrors the shared convention of tests/fixtures/icp/good.yaml
+# (owned by the discovery domain): top-level segment_id + firmographics/roles/pains/triggers/
+# beachhead_criteria/anti_icp blocks, every leaf traced to interview ids. The frozen scorer reads the
+# shared file after merge; this copy exists so the positioning gate can be tested in isolation.
+segment_id: smb-mfg
+segment_name: Luzon SMB manufacturers counting stock by hand
+version: 2
+date: 2026-09-02
+firmographics:
+  industry: {value: "food, packaging and light-assembly manufacturing (PSIC C10, C17, C22)", evidence_interview_ids: [I-1, I-2, I-3, I-5]}
+  size_band: {value: "20–200 staff", evidence_interview_ids: [I-1, I-2, I-4]}
+  geography: {value: "CALABARZON and Central Luzon industrial estates", evidence_interview_ids: [I-1, I-3, I-6]}
+  revenue_band: {value: "₱50M–₱600M annual sales", evidence_interview_ids: [I-2, I-4, I-5]}
+roles:
+  economic_buyer: {value: owner or general manager, evidence_interview_ids: [I-1, I-2, I-4]}
+  champion: {value: warehouse supervisor, evidence_interview_ids: [I-1, I-3, I-5]}
+  decision_maker_role: {value: owner-GM signs; finance manager countersigns, evidence_interview_ids: [I-2, I-4, I-6]}
+  relationship_owner: {value: founder (studio) ↔ owner-GM (client), evidence_interview_ids: [I-1, I-2, I-6]}
+technographics:
+  - {value: spreadsheet count sheets reconciled monthly, evidence_interview_ids: [I-1, I-2, I-3]}
+  - {value: "ERP or accounting system with an inventory module (QNE, SAP B1, Odoo)", evidence_interview_ids: [I-2, I-4, I-5]}
+pains:
+  - {id: PG-1, type: pain, text: month-end count variance forces a second counting shift, rank: 1, evidence_interview_ids: [I-1, I-2, I-3, I-5]}
+  - {id: PG-2, type: pain, text: write-offs found only at the external audit, rank: 2, evidence_interview_ids: [I-2, I-4, I-6]}
+  - {id: PG-3, type: gain, text: a daily count the finance manager trusts without re-counting, rank: 3, evidence_interview_ids: [I-1, I-4, I-5]}
+triggers:
+  push: [{value: audit adjustment above ₱1M last fiscal year, evidence_interview_ids: [I-2, I-4, I-6]}]
+  pull: [{value: a count that matches the ERP without a night shift, evidence_interview_ids: [I-1, I-3, I-5]}]
+  anxiety: [{value: fear of a vendor disappearing after install, evidence_interview_ids: [I-1, I-2, I-5]}]
+  habit: [{value: the supervisor's spreadsheet macros already work for them, evidence_interview_ids: [I-1, I-3, I-4]}]
+buying_process:
+  procurement_mode: {value: private, evidence_interview_ids: [I-1, I-2, I-4]}
+  payment_terms_expected: {value: 50 % deposit then Net 30 on acceptance, evidence_interview_ids: [I-2, I-4, I-6]}
+  withholding_class: {value: "corporate payor; 10–15 % EWT on professional fees", evidence_interview_ids: [I-2, I-4, I-5]}
+beachhead_criteria:
+  burning_pain: {value: "second counting shift every month-end (PG-1)", source_id: S-3, evidence_interview_ids: [I-1, I-2, I-3]}
+  willingness_to_pay: {value: "current spend ₱40k–₱90k per month on overtime and re-counts", source_id: S-3, evidence_interview_ids: [I-2, I-4, I-5]}
+  growth: {value: "manufacturing establishments in CALABARZON grew in the 2024 List of Establishments", source_id: S-7, evidence_interview_ids: [I-3, I-5, I-6]}
+  access: {value: "founder network at two Laguna industrial estates", source_id: S-9, evidence_interview_ids: [I-1, I-3, I-6]}
+  expandable: {value: "same ERP stack in distribution and cold-storage firms", source_id: S-7, evidence_interview_ids: [I-2, I-4, I-6]}
+anti_icp:
+  - {rule: "inbound 'government' leads without a PhilGEPS-published notice (impersonation scams)", evidence_ids: [S-11]}
+  - {rule: "single-site firms under 20 staff (no counting shift to remove)", evidence_ids: [I-7, I-8]}
+  - {rule: "buyers who require Net 60+ on a first engagement", evidence_ids: [I-9, S-10]}
+  - {rule: "firms with no ERP or accounting system to reconcile against", evidence_ids: [I-7, I-10]}
