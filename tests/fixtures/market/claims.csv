@@ -1,0 +1,11 @@
+# as_of: 2026-09-02
+# market/claims.csv fixture — beachhead SEG-1: NCR small & medium manufacturers (PSIC section C, 10–199 employees) still counting stock on paper/spreadsheets.
+# Sizing charter: counting unit = establishment; frame = PSA List of Establishments (LE) as tabulated by DTI; geography NCR; currency PHP; reference year 2023/2024.
+# price_per_unit = PHP 180,000 per establishment per year (draft price book). Shared by good-factors.csv and bad-factors.csv — the bad ledger breaks against these same claims.
+claim_id,stated_value,currency,computed_value,method,layer,segment_id
+MC-1,410000000,PHP,410558550,bottom_up,TAM,SEG-1
+MC-2,409000000,PHP,408795109,top_down,TAM,SEG-1
+MC-3,254000000,PHP,254546301,bottom_up,SAM,SEG-1
+MC-4,225000000,PHP,224837310,top_down,SAM,SEG-1
+MC-5,5760000,PHP,5760000,bottom_up,SOM,SEG-1
+MC-6,4500000,PHP,4496746,top_down,SOM,SEG-1
