@@ -1,0 +1,1 @@
+FIXTURE STUB - Invoice template - VAT separate line, both TINs, printed credit term - Fixture Engineering Studio OPC - not a real document

@@ -1,0 +1,22 @@
+# as_of: 2026-09-02
+# Fixture variant: a non-VAT sole proprietor on the 8 pct option, no employees.
+name: "Fixture Solo Engineer"
+entity_type: sole_prop
+has_employees: false
+employee_count: 0
+first_hire_date:
+gross_sales_12m: 800000
+vat_registered: false
+eight_pct_elected: true
+sells_online: false
+foreign_equity: 0
+total_assets: 300000
+total_liabilities: 50000
+fiscal_year_end: 12-31
+registration_date: 2026-03-15
+withholding_agent: false
+bmbe_elected: false
+books_method: manual
+spi_records: 0
+sells_consumer_products: false
+trademark_filed: false
