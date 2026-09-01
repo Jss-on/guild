@@ -1,0 +1,5 @@
+# as_of: 2026-09-02
+sku,product_name,has_radio,ntc_status,ntc_cert_no,ntc_model_name,marketed_model_name,bps_mandatory,ps_icc_status,cert_expiry,consumer_product,warranty_text_days,service_invoice_guaranty_days,service_line,template_text
+SKT-W1,Sukat W1 cold-room temperature logger (WiFi 2.4 GHz),Y,pending,,,Sukat W1,N,,,N,,90,Y,"Sukat W1 — repairs: workmanship and replacement spare parts guaranteed for 90 days from the service invoice date (RA 7394 Art. 71)."
+SKT-W1P,Sukat W1 Pro logger (WiFi + BLE),Y,approved,ESD-RCE-2607-0342,SKT-W1,Sukat W1 Pro,N,,,N,,90,Y,"Sukat W1 Pro — repairs: workmanship and replacement spare parts guaranteed for 90 days from the service invoice date (RA 7394 Art. 71)."
+LKB-LED-10,Lakbay 10 W LED work lamp (mains-powered),N,,,,Lakbay LED-10,Y,valid,2027-03-31,Y,30,,N,"30-day warranty against manufacturing defects. No Return, No Exchange."

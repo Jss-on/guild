@@ -1,0 +1,7 @@
+# as_of: 2026-09-02
+milestone_id,project_id,deliverable,acceptance_ref,planned_date,delivered_date,review_deadline,accepted_date,deemed_accepted,invoice_id,invoice_date,paid_date,amount
+P-2026-01/M-0,P-2026-01,contract signature,SOW-2026-001 M-0,2026-01-12,2026-01-12,,2026-01-12,N,SI-2026-0021,2026-01-13,2026-01-16,360000
+P-2026-01/M-1,P-2026-01,D-1 firmware release candidate,AC-1,2026-02-20,2026-02-19,2026-02-26,2026-02-24,N,SI-2026-0024,2026-02-25,2026-03-20,360000
+P-2026-01/M-3,P-2026-01,D-3 pilot report + D-4 handover,AC-3,2026-04-10,2026-04-08,2026-04-15,,Y,SI-2026-0029,2026-04-16,2026-05-12,420000
+P-2026-06/M-0,P-2026-06,contract signature,SOW-2026-009 M-0,2026-05-28,2026-05-28,,2026-05-28,N,SI-2026-0036,2026-05-29,2026-06-10,225000
+P-2026-06/M-1,P-2026-06,D-1 sensor board EVT report,AC-1,2026-07-10,2026-07-08,2026-07-15,2026-07-15,N,SI-2026-0040,2026-07-10,2026-08-05,270000

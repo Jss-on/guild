@@ -1,0 +1,10 @@
+# as_of: 2026-09-02
+invoice_no,invoice_date,client_id,client_name,client_tin,line_type,amount_ex_vat,vat_amount,gross,credit_term_days,due_date,ewt_rate,ewt_amount,expected_cash,paid_date,paid_amount,rail,rail_fee,form2307_received,form2307_quarter,status,demand_letter_date
+SI-2026-0031,2026-04-28,C-01,Mabuhay Cold Chain Corp.,008-123-456-000,service,250000,30000,280000,30,2026-05-28,10,25000,255000,2026-05-26,255000,PESONet,0,Y,2026Q2,paid,
+SI-2026-0034,2026-05-20,C-02,Bayanihan Agri Cooperative,009-222-333-000,product,48000,5760,53760,15,2026-06-04,1,480,53280,2026-06-03,51937.29,PayMongo GCash,1342.71,Y,2026Q2,paid,
+SI-2026-0036,2026-06-10,C-03,Luzon Precision Machining Inc.,010-555-666-000,service,220000,26400,246400,30,2026-07-10,10,22000,224400,2026-07-08,224400,PESONet,0,Y,2026Q3,paid,
+SI-2026-0038,2026-07-15,C-03,Luzon Precision Machining Inc.,010-555-666-000,service,180000,21600,201600,30,2026-08-14,10,18000,183600,2026-08-12,183600,PESONet,0,N,,paid,
+SI-2026-0039,2026-07-28,C-02,Bayanihan Agri Cooperative,009-222-333-000,product,60000,7200,67200,30,2026-08-27,1,600,66600,,,,,N,,open,
+SI-2026-0041,2026-08-20,C-01,Mabuhay Cold Chain Corp.,008-123-456-000,service,150000,18000,168000,30,2026-09-19,10,15000,153000,,,,,N,,open,
+SI-2026-0042,2026-08-25,C-04,Dagat Aquaculture Ventures Inc.,011-777-888-000,recurring,25000,3000,28000,15,2026-09-09,10,2500,25500,,,,,N,,open,
+,2026-08-30,C-05,Walk-in (Shopee order 260830-1187),,product,401.79,48.21,450,0,,0,0,450,2026-08-30,450,GCash QR Ph,0,N,,paid,
