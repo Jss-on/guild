@@ -1,0 +1,87 @@
+# icp.yaml — fixture, bad: four planted defects the icp gate must name
+#   1. firmographics.geography traces to only two interview ids
+#   2. triggers.anxiety is empty (a force bucket nobody quoted)
+#   3. roles.decision_maker_role is missing altogether
+#   4. pains[0] cites I-999, an interview that does not exist in the ledger
+segment_id: smb-mfg
+version: 1
+as_of: 2026-09-02
+market_type: resegmented_niche
+firmographics:
+  industry:
+    value: "Make-to-stock manufacturers in food, plastics, packaging, metal fabrication and garments (PSIC C10-C32)"
+    evidence_interview_ids: [I-1, I-2, I-4, I-5, I-7]
+  size_band:
+    value: "20-199 employees, single production site"
+    evidence_interview_ids: [I-1, I-2, I-5, I-6, I-10]
+  geography:
+    value: "Metro Manila industrial belt"
+    evidence_interview_ids: [I-1, I-3]
+  revenue_band:
+    value: "PHP 20M-200M annual sales (owner-stated, unverified)"
+    evidence_interview_ids: [I-5, I-7, I-10, I-13]
+roles:
+  economic_buyer:
+    value: "Owner / general manager"
+    evidence_interview_ids: [I-1, I-7, I-9, I-14]
+  champion:
+    value: "Plant or operations manager who runs the count"
+    evidence_interview_ids: [I-2, I-8, I-10]
+  relationship_owner:
+    value: "founder-1, in person, Taglish"
+    evidence_interview_ids: [I-1, I-3, I-7]
+technographics:
+  - value: "Excel or Google Sheets stock cards updated weekly"
+    evidence_interview_ids: [I-1, I-2, I-12, I-14]
+  - value: "Paper bin cards or notebooks on the floor"
+    evidence_interview_ids: [I-2, I-4, I-11]
+pains:
+  - value: "Month-end physical count consumes 16-32 staff-hours"
+    evidence_interview_ids: [I-1, I-10, I-12, I-14, I-999]
+  - value: "Stockouts force emergency purchases at a 12-18 % premium or cost an order"
+    evidence_interview_ids: [I-3, I-7, I-9]
+triggers:
+  push:
+    - value: "A stockout that cost an order or forced a premium purchase"
+      evidence_interview_ids: [I-3, I-7, I-9]
+  pull:
+    - value: "A live count the owner can check from a phone before quoting"
+      evidence_interview_ids: [I-3, I-7, I-10]
+  anxiety: []
+  habit:
+    - value: "The Friday Excel update and the owner's daily floor walk"
+      evidence_interview_ids: [I-1, I-11, I-12]
+buying_process:
+  procurement_mode:
+    value: private
+    evidence_interview_ids: [I-1, I-7, I-10, I-14]
+  payment_terms_expected:
+    value: "50 % deposit, then monthly billing; Net 15 on invoices"
+    evidence_interview_ids: [I-7, I-10, I-14]
+  withholding_class:
+    value: "Corporate clients withhold 2 % (contractor) or 10 % (professional fees) and issue BIR Form 2307"
+    evidence_interview_ids: [I-5, I-10, I-13]
+beachhead_criteria:
+  burning_pain:
+    value: "Count day and stockouts named unprompted by 9 of 14 interviewees"
+    evidence_interview_ids: [I-1, I-3, I-7, I-9, I-10]
+  willingness_to_pay:
+    value: "Three money commitments (PHP 10k-25k) before any product exists"
+    evidence_interview_ids: [I-7, I-10, I-14]
+  growth:
+    value: "Owners adding a second shift or line in 2026"
+    evidence_interview_ids: [I-2, I-7, I-10]
+  access:
+    value: "Reachable in person within Metro Manila; four peer introductions obtained"
+    evidence_interview_ids: [I-3, I-9, I-12]
+  expandable:
+    value: "Same count problem across food, plastics and packaging; provincial plants of the same owners"
+    evidence_interview_ids: [I-2, I-11, I-14]
+anti_icp:
+  disqualifiers:
+    - rule: "Already runs a WMS with barcode scanners (accuracy is contractual and the tooling is paid for)"
+      evidence_interview_ids: [I-15, I-16, I-17]
+    - rule: "Vendor selection is run by a principal or a tender, not by the owner"
+      evidence_interview_ids: [I-16, I-18]
+    - rule: "The count is a quarter-close accounting event only, with no owner-level pain"
+      evidence_interview_ids: [I-5, I-13]
