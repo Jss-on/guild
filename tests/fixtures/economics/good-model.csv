@@ -1,0 +1,48 @@
+# as_of: 2026-09-02
+# Driver register — PH engineering studio (services + one anvil hardware SKU + one small SaaS line).
+# Schema: brief 05 §5.1; evidence ∈ measured|quote|statute|benchmark|assumption; FAST: inputs only.
+driver_id,name,unit,segment,base,worst,best,evidence,source_id,measured_from,owner,last_verified
+price_arpa,Average revenue per account per month,PHP,saas_smb,3500,2800,4000,assumption,,,jess,2026-09-02
+gm_pct,SaaS gross margin fully loaded (hosting+support in COGS),frac,saas_smb,0.82,0.70,0.86,benchmark,05:S8;05:S4,,jess,2026-09-02
+churn_m,Monthly gross revenue churn,frac,saas_smb,0.022,0.05,0.015,benchmark,05:S1;05:S14,,jess,2026-09-02
+expansion_m,Monthly expansion (upsell) rate,frac,saas_smb,0.010,0.004,0.014,assumption,,,jess,2026-09-02
+cac_paid,Paid CAC (S&M incl salaries / new paid customers),PHP,saas_smb,15000,30000,11000,measured,,ledger:gtm/pipeline.tsv,jess,2026-09-02
+sm_monthly,Sales & marketing spend per month,PHP,all,150000,120000,180000,measured,,ledger:finance/expense_ledger.csv,jess,2026-09-02
+opex_fixed,Fixed opex excl S&M per month,PHP,all,450000,480000,430000,measured,,ledger:finance/expense_ledger.csv,jess,2026-09-02
+cash_open,Opening cash,PHP,all,6000000,6000000,6000000,measured,,bank:bpi-corporate-2026-09,dio,2026-09-02
+revenue_m,Total monthly revenue (all lines),PHP,all,1800000,1500000,2000000,measured,,ledger:finance/ar_ledger.csv,jess,2026-09-02
+cogs_m,Total monthly COGS / delivery cost,PHP,all,1080000,1000000,1150000,measured,,ledger:finance/expense_ledger.csv,jess,2026-09-02
+new_arr_monthly,New ARR added per month,PHP,all,150000,60000,220000,measured,,ledger:gtm/pipeline.tsv,jess,2026-09-02
+growth_m,Trailing compound monthly revenue growth,frac,all,0.05,0.03,0.07,assumption,,,jess,2026-09-02
+bom_unit,BOM cost per unit (anvil gw1),PHP,hw_sku1,3600,4100,3300,measured,,anvil:gw1:BOM_COST,dio,2026-09-02
+asm_test_pack_unit,Assembly+test+packaging per unit,PHP,hw_sku1,900,1100,800,quote,Q-2026-014,,dio,2026-09-02
+freight_duty_unit,Freight+duties per landed unit,PHP,hw_sku1,400,650,350,quote,Q-2026-018,,dio,2026-09-02
+scrap_pct,First-run yield loss,frac,hw_sku1,0.05,0.08,0.02,benchmark,05:S26,,dio,2026-09-02
+warranty_pct,Warranty reserve as share of price,frac,hw_sku1,0.03,0.05,0.02,assumption,,,dio,2026-09-02
+price_unit,Unit list price,PHP,hw_sku1,18000,16000,20000,measured,,ledger:pricing/price-book.csv,jess,2026-09-02
+channel_margin,Channel margin given away,frac,hw_sku1,0.15,0.30,0.0,benchmark,05:S27,,jess,2026-09-02
+tooling_total,Tooling+NRE+certification,PHP,hw_sku1,800000,1000000,600000,quote,Q-2026-014,,dio,2026-09-02
+moq_units,Minimum order quantity (first run),units,hw_sku1,500,300,300,quote,Q-2026-014,,dio,2026-09-02
+deposit_pct,CM deposit on PO,frac,hw_sku1,0.5,0.5,0.3,quote,Q-2026-014,,dio,2026-09-02
+units_monthly,Units sold per month,units,hw_sku1,60,40,90,assumption,,,jess,2026-09-02
+dso_days,Days sales outstanding,days,hw_sku1,45,150,30,benchmark,05:S27,,jess,2026-09-02
+dio_days,Days inventory outstanding,days,hw_sku1,90,150,60,assumption,,,dio,2026-09-02
+dpo_days,Days payable outstanding,days,hw_sku1,30,15,45,quote,Q-2026-014,,dio,2026-09-02
+bill_rate,Blended hourly bill rate,PHP,svc,1900,1700,2100,measured,,ledger:finance/ar_ledger.csv,jess,2026-09-02
+utilization,Billable utilisation,frac,svc,0.72,0.62,0.78,measured,,ledger:economics/studio-ledger.csv,jess,2026-09-02
+annual_hours,Available hours per FTE per year,h,svc,1920,1920,1920,measured,,ledger:economics/studio-ledger.csv,jess,2026-09-02
+loaded_cost_fte,Fully loaded annual cost per billable FTE,PHP,svc,1320000,1400000,1280000,measured,,ledger:finance/payroll.csv,jess,2026-09-02
+delivery_cost_pct,Delivery cost share of project revenue,frac,svc,0.58,0.64,0.55,measured,,ledger:economics/studio-ledger.csv,jess,2026-09-02
+overrun_pct,Project overrun vs estimate,frac,svc,0.06,0.12,0.03,measured,,ledger:economics/studio-ledger.csv,jess,2026-09-02
+top_client_share,Largest client share of revenue,frac,all,0.16,0.24,0.12,measured,,ledger:finance/ar_ledger.csv,jess,2026-09-02
+wage_floor,NCR daily minimum wage (model both floors),PHP,all,755,780,695,statute,05:S48;05:S49,,jess,2026-09-02
+sss_er_pct,SSS employer share of MSC,frac,all,0.10,0.10,0.10,statute,05:S50,,jess,2026-09-02
+philhealth_er_pct,PhilHealth employer share,frac,all,0.025,0.025,0.025,statute,05:S50,,jess,2026-09-02
+pagibig_er_php,Pag-IBIG employer cap per month,PHP,all,200,200,200,statute,05:S50,,jess,2026-09-02
+ec_er_php,Employees Compensation employer per month,PHP,all,30,30,30,statute,05:S50,,jess,2026-09-02
+cit_rate,Corporate income tax rate modelled,frac,all,0.20,0.25,0.20,statute,05:S46,,jess,2026-09-02
+vat_rate,VAT rate modelled,frac,all,0.12,0.12,0.12,statute,05:S47,,jess,2026-09-02
+vat_registered,VAT-registered flag (1=yes),bool,all,1,1,1,measured,,ledger:compliance/register.csv,jess,2026-09-02
+total_assets,Total assets,PHP,all,9000000,9500000,8500000,measured,,ledger:finance/balance.csv,jess,2026-09-02
+nti_annual,Net taxable income (projected annual),PHP,all,3000000,600000,4200000,assumption,,,jess,2026-09-02
+years_operating,Years in operation,years,all,1,1,1,measured,,ledger:compliance/register.csv,jess,2026-09-02

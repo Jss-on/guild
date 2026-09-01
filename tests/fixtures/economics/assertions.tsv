@@ -1,0 +1,37 @@
+# as_of: 2026-09-02
+# Assertion table (brief 05 §5.2; thresholds carry their grade in economics-protocol.md §5).
+# op ∈ le	ge	within · corner ∈ base	worst	best	all · traces = V-n + brief source ids.
+id	metric	op	limit	corner	traces
+UE-01	gm_pct	ge	0.65	base	V-4,05:S8
+UE-01w	gm_pct	ge	0.65	worst	V-4,05:S8
+UE-01h	hw_gm	ge	0.50	base	V-5,05:S28
+UE-01hw	hw_gm	ge	0.30	worst	V-5,05:S25
+UE-02	ltv_cac	ge	3	base	V-4,05:S1
+UE-02w	ltv_cac	ge	1	worst	V-4,05:S2
+UE-03	cac_payback	le	12	base	V-4,05:S8
+UE-03w	cac_payback	le	24	worst	V-4,05:S8
+UE-04	net_churn_m	le	0.02	base	V-4,05:S1
+UE-05	burn_multiple	le	2	base	V-7,05:S5
+UE-06	runway_months	ge	18	base	V-7,05:S10
+UE-06w	runway_months	ge	12	worst	V-7,05:S10
+UE-07	default_alive	ge	1	base	V-7,05:S39
+UE-09	be_gap_months	ge	0	base	V-7,05:S35
+UE-09w	be_gap_months	ge	0	worst	V-7,05:S35
+HW-01	hw_gm	ge	0.30	all	V-5,05:S25
+HW-02	first_po_headroom	ge	0	worst	V-5,05:S26
+HW-03	wc_headroom	ge	0	worst	V-5,05:S36
+HW-04	hw_gm_amortised	ge	0.30	base	V-5,05:S25
+SV-01	utilization	ge	0.70	base	V-6,12:S1
+SV-01w	utilization	ge	0.60	worst	V-6,12:S1
+SV-02	project_margin	ge	0.35	base	V-6,12:S1
+SV-03	revenue_per_fte_ratio	ge	1.5	base	V-6,12:S1
+SV-04	overrun_pct	le	0.10	base	V-6,05:S22
+ALL-01	top_client_share	le	0.20	base	V-8,05:S4
+ALL-02	fragility	le	0	base	V-4,05:S34
+ALL-03	register_violations	le	0	all	V-4,05:S37
+PH-01	wage_floor	ge	780	worst	V-9,05:S48
+PH-01b	sss_er_pct	within	0.10	all	V-9,05:S50
+PH-01c	philhealth_er_pct	within	0.025	all	V-9,05:S50
+PH-01d	pagibig_er_php	within	200	all	V-9,05:S50
+PH-02	cit_rate_gap	ge	0	all	V-9,05:S46
+PH-02b	vat_gap	ge	0	all	V-9,05:S47
