@@ -1,0 +1,8 @@
+{
+  "command": "guild:discover",
+  "status": "COMPLETE",
+  "pass_rate": 0.71,
+  "req_coverage": 1.0,
+  "interviews": 12,
+  "results_tsv": "guild/discover-260902-1200/guild-results.tsv"
+}

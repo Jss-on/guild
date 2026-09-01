@@ -1,0 +1,18 @@
+# Node
+node_modules/
+
+# Logs (fixtures + evidence are tracked)
+*.log
+!**/evidence/**/*.log
+!tests/fixtures/**/*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Run output (ventures live in their own repos; harness repo stays clean).
+# Anchored to repo root — .claude/commands/guild/ etc. must stay tracked.
+/guild/
+/forge/
+/build-output/
+/ventures/

@@ -1,0 +1,8 @@
+n	dimension	assertion	status	weight	evidence	traces
+1	evidence	every market figure traces to a claims-ledger row	pass	1.0	evidence:evidence/claims.tsv	V-1
+2	customer	interview quota met per segment	fail	1.0	evidence:discovery/interviews.tsv	V-2
+3	offer	positioning statement complete	pass	1.0	evidence:offer/positioning.md	V-1
+4	economics	assertions hold at worst corner	pass	1.0	evidence:economics/model.csv	V-2
+5	gtm	playbook complete	pass	1.0	evidence:gtm/playbook.md	V-1
+6	operations	compliance register complete	pass	1.0	evidence:compliance/register.csv	V-2
+7	governance	board pack current	pass	1.0	evidence:board/pack-2026-09.md	V-1

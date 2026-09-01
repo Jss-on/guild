@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "guild",
+  "version": "0.0.1",
+  "description": "Guild — autonomous business-building harness for Claude Code. AutoForge's business sibling: idea → validated customer + offer → closing unit economics → go-to-market → first paying customer → standing board, every gate mechanical (claims-ledger citations, interview quotas, economics assertions at corners, funnel from a human-entered pipeline).",
+  "owner": {
+    "name": "Jss-on",
+    "url": "https://github.com/Jss-on"
+  },
+  "plugins": [
+    {
+      "name": "guild",
+      "description": "Autonomous business-building engine. Commands: guild (metric loop), discover (VRS: every assumption measurable + testable), build (gated pipeline to first paying customer), board (BOD cadence: pack from ledgers → CONTINUE|PIVOT|KILL), improve, evals. Gating evidence dimension; sending, spending, signing and filing always human-gated.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Jss-on",
+        "url": "https://github.com/Jss-on"
+      },
+      "source": "./claude-plugin",
+      "category": "productivity"
+    }
+  ]
+}

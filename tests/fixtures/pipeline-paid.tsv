@@ -1,0 +1,4 @@
+id	segment	account	stage	value	currency	next_action	updated	invoice	payment
+P-1	smb-mfg	Acme Fabrication	won	120000	PHP	kickoff 2026-09-08	2026-09-01	INV-2026-001	evidence:ops/payments/INV-2026-001.pdf
+P-2	smb-mfg	Beta Foods	proposal	80000	PHP	follow-up	2026-08-30	-	-
+P-3	logistics	Gamma Freight	lost	0	PHP	-	2026-08-20	-	-

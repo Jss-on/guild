@@ -1,0 +1,16 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  score-seam:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Score-script self-tests
+        run: bash tests/score.test.sh
+      - name: Plugin mirror parity
+        run: bash scripts/sync-plugin.sh --check
+      - name: E2E capability (informational)
+        run: bash scripts/score-e2e-capability.sh
