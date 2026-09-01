@@ -1,0 +1,12 @@
+# as_of: 2026-09-02
+premortem_id,adr_id,date,failure_reason,risk_id,mitigation_ref
+PM-1,ADR-1,2026-02-10,A founder leaves in month eight and disputes the cliff,R-1,founders-agreement departure_terms
+PM-1,ADR-1,2026-02-10,Contribution imbalance in year two makes the equal split feel unfair,R-1,decision_rights + advisor chair mediation
+PM-1,ADR-1,2026-02-10,IP created before incorporation is not covered by the assignment,R-6,ip-assignment covers pre-incorporation work
+PM-1,ADR-1,2026-02-10,A hire is blocked by deadlock with no tie-break,R-1,deadlock clause
+PM-1,ADR-1,2026-02-10,Founder salary deferral during a cash pinch breeds resentment,R-3,cash floor rule
+PM-2,ADR-2,2026-02-18,Annual SEC and BIR compliance load eats a founder-week per quarter,R-7,compliance register
+PM-2,ADR-2,2026-02-18,Incorporation and permit costs drain cash before the first deposit lands,R-3,13-week cash forecast
+PM-2,ADR-2,2026-02-18,Old sole-proprietor invoices confuse client AP and delay payment,R-7,retire sole-prop series
+PM-2,ADR-2,2026-02-18,Corporate counterparty invites heavier redlines on liability,R-6,MSA v1 liability cap
+PM-2,ADR-2,2026-02-18,Withholding bracket change is missed in the price book,R-7,cwt_rate_expected column

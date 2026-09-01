@@ -1,0 +1,8 @@
+# as_of: 2026-09-02
+# PLANTED DEFECT: the pipeline ledger is 45 days older than the meeting (latest last_activity_at
+# 2026-07-21 vs meeting 2026-09-04) → the pack must come out STALE.
+deal_id,account,segment,stage,amount_acv,currency,probability,owner,next_action,next_action_date,last_activity_at,expected_close_date
+DL-1,Mabuhay Foods Corp,fnb_retrofit,won,1850000,PHP,100,Jession Diwangan,phase 2 kickoff,2026-07-15,2026-07-10,2026-07-10
+DL-2,San Rafael Beverage,fnb_retrofit,proposal,1400000,PHP,60,Jession Diwangan,walkthrough with the plant manager,2026-07-28,2026-07-21,2026-10-15
+DL-3,Laguna Dairy Co-op,fnb_retrofit,meeting,900000,PHP,40,Jession Diwangan,send the paid discovery SOW,2026-07-22,2026-07-15,2026-11-10
+DL-4,Cavite Snacks Mfg,fnb_retrofit,lead,1200000,PHP,20,Jession Diwangan,qualify against the ICP checklist,2026-07-12,2026-07-05,2026-12-04

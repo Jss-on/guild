@@ -1,0 +1,9 @@
+# as_of: 2026-09-02
+kpi_id,name,unit,direction,role,period,plan
+rev_accepted,Accepted-milestone revenue,PHP,up,north_star,2026-08,1500000
+leads_qualified,Qualified leads,count,up,input,2026-08,8
+win_rate,Proposal win rate,pct,up,input,2026-08,45
+utilisation,Billable utilisation,pct,up,input,2026-08,72
+first_pass,Milestone first-pass acceptance,pct,up,input,2026-08,85
+repeat_share,Repeat and expansion revenue share,pct,up,input,2026-08,30
+revenue,Quarterly revenue plan,PHP,up,quarter_plan,2026-Q4,4200000

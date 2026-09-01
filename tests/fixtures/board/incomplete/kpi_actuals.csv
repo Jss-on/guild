@@ -1,0 +1,14 @@
+# as_of: 2026-09-02
+kpi_id,period,actual,recorded_on,source
+rev_accepted,2026-07,1210000,2026-08-04,ops/milestones.csv
+rev_accepted,2026-08,1380000,2026-09-01,ops/milestones.csv
+leads_qualified,2026-07,6,2026-08-04,gtm/pipeline.tsv
+leads_qualified,2026-08,9,2026-09-01,gtm/pipeline.tsv
+win_rate,2026-07,50,2026-08-04,gtm/pipeline.tsv
+win_rate,2026-08,40,2026-09-01,gtm/pipeline.tsv
+utilisation,2026-07,78,2026-08-04,economics/studio-ledger.csv
+utilisation,2026-08,76,2026-09-01,economics/studio-ledger.csv
+first_pass,2026-07,80,2026-08-04,ops/milestones.csv
+first_pass,2026-08,88,2026-09-01,ops/milestones.csv
+repeat_share,2026-07,35,2026-08-04,finance/ar_ledger.csv
+repeat_share,2026-08,31,2026-09-01,finance/ar_ledger.csv

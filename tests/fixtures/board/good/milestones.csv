@@ -1,0 +1,8 @@
+# as_of: 2026-09-02
+milestone_id,project_id,title,committed_date,delivered_date,accepted_date,status,updated_on
+MS-1,PRJ-1,Discovery report and retrofit plan,2026-05-15,2026-05-13,2026-05-18,accepted,2026-05-18
+MS-2,PRJ-1,Sensor pilot on line 2,2026-06-30,2026-06-28,2026-07-03,accepted,2026-07-03
+MS-3,PRJ-1,Downtime dashboard MVP,2026-07-24,2026-07-27,2026-08-01,accepted,2026-08-01
+MS-4,PRJ-2,Paid discovery sprint,2026-08-14,2026-08-12,2026-08-17,accepted,2026-08-17
+MS-5,PRJ-1,Line 3 and 4 rollout,2026-09-26,,,in_progress,2026-08-29
+MS-6,PRJ-2,Retrofit proposal and pilot scope,2026-09-12,,,in_progress,2026-08-31
