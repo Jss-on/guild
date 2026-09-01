@@ -1,0 +1,6 @@
+# tests/fixtures/assets/_icp.yaml — private ICP copy for the assets gate tests.
+# The shared tests/fixtures/icp/good.yaml (another domain's fixture) carries the same election;
+# this copy keeps the marketing suite self-contained inside tests/fixtures/assets/.
+segment_id: smb-mfg
+name: Metro Manila SMB manufacturers with manual inventory
+decision_maker_role: owner-operator

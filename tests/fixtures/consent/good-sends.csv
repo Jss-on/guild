@@ -1,0 +1,12 @@
+# as_of: 2026-09-02
+send_id,sequence_id,template_id,word_count,contact_id,channel,purpose,sent_at,human_approved_by,human_approved_at,follow_up_n,batch_size,planned_follow_ups
+S-001,SEQ-F1,founder-intro-v3,68,K-201,email,outreach; basis: legitimate_interest,2026-08-04,M. Reyes,2026-08-04,0,1,3
+S-002,SEQ-F1,founder-fu1-v3,52,K-201,email,outreach; basis: legitimate_interest,2026-08-08,M. Reyes,2026-08-08,1,1,3
+S-003,SEQ-F1,founder-fu2-v3,44,K-201,email,outreach; basis: legitimate_interest,2026-08-13,M. Reyes,2026-08-13,2,1,3
+S-004,SEQ-F1,founder-fu3-v3,39,K-201,email,outreach; basis: legitimate_interest,2026-08-18,M. Reyes,2026-08-18,3,1,3
+S-005,,newsletter-2026-08,95,K-101,email,marketing,2026-08-21,M. Reyes,2026-08-20,0,42,
+S-006,,newsletter-2026-08,95,K-102,email,marketing,2026-08-21,M. Reyes,2026-08-20,0,42,
+S-007,,viber-launch-note,60,K-101,viber,marketing,2026-08-25,M. Reyes,2026-08-25,0,18,
+S-008,,sms-event-reminder,28,K-104,sms,marketing,2026-08-27,M. Reyes,2026-08-27,0,12,
+S-009,,invoice-notice,45,K-103,email,transactional,2026-08-28,M. Reyes,2026-08-28,0,1,
+S-010,,newsletter-2026-08,95,K-105,email,newsletter,2026-08-21,M. Reyes,2026-08-20,0,42,
