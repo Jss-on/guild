@@ -33,6 +33,9 @@ done
 for s in score-guild.sh doctor.sh validate-handoff.sh; do
   add "scripts/$s" "claude-plugin/skills/guild/scripts/$s"
 done
+for f in scripts/gates/*.sh; do
+  [[ -f "$f" ]] && add "$f" "claude-plugin/skills/guild/scripts/gates/$(basename "$f")"
+done
 
 # --- expected destination set (for orphan detection) ------------------------
 expected() {

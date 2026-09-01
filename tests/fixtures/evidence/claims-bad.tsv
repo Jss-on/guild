@@ -1,0 +1,4 @@
+id	rq	claim	confidence	sources	evidence
+C-1	RQ-1	Bookkeeping costs PHP 3,000 to PHP 15,000 per month in the Philippines	high	S-4	evidence:evidence/S-4.md
+C-2	RQ-2	Utilisation averages 68.9 % across professional-services firms	moderate	S-9	evidence:evidence/S-9.md
+C-3	RQ-3	A claim resting on a source the ledger marks unverified	low	S-1	evidence:evidence/S-1.md

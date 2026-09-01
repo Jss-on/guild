@@ -1,0 +1,4 @@
+id	rq	claim	confidence	sources	evidence
+C-1	RQ-1	Under EOPT (RA 11976, effective 22 Jan 2024) a registered invoice is mandatory for every sale of PHP 500 or more and replaces the official receipt for services	high	S-1,S-3	evidence:evidence/S-1.md
+C-2	RQ-2	Professional-services firms averaged 68.9 % billable utilisation and 35.9 % project margin in the 2025 SPI benchmark (403 firms, 2024 data)	moderate	S-2	evidence:evidence/S-2.md
+C-3	RQ-3	Philippine bookkeepers charge roughly PHP 3,000 to PHP 15,000 per month for a small business (vendor blog, Oct 2025)	low	S-4	evidence:evidence/S-4.md

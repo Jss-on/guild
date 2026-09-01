@@ -82,6 +82,19 @@ GATED_DIMS="evidence customer economics"
 
 die() { echo "score-guild: $*" >&2; exit 2; }
 
+# Domain gates live one per file in scripts/gates/<name>.sh and define gate_<name>(); they are
+# sourced here so the plugin tree (skills/guild/scripts/gates/) resolves the same way.
+GUILD_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+GATES_DIR="$GUILD_SCRIPT_DIR/gates"
+if [[ -d "$GATES_DIR" ]]; then
+  for _g in "$GATES_DIR"/*.sh; do [[ -f "$_g" ]] && source "$_g"; done
+fi
+run_gate() { # run_gate <name> [args…] — dispatch to gate_<name> or fail closed
+  local name="$1"; shift
+  if declare -F "gate_$name" >/dev/null 2>&1; then "gate_$name" "$@"
+  else echo "score-guild: gate '$name' not implemented (scripts/gates/$name.sh)" >&2; return 2; fi
+}
+
 # resolve_results [args…] → path or return 1. Explicit arg or GUILD_RESULTS only — never a
 # discovered file the caller did not name (a stale ledger scoring 1.00 is a false green).
 resolve_results() {
@@ -300,21 +313,57 @@ paying() {
 
 usage() {
   cat >&2 <<'USAGE'
-usage: score-guild.sh {pass-rate|coverage|validate|verdict|paying} [args]
-  pass-rate [results.tsv] [--strict-evidence]
-  coverage  [results.tsv] [vrs.md]  |  coverage --spec <spec.yaml> <vrs.md>
-  validate  <venture.spec.yaml>
-  verdict   [results.tsv] [vrs.md|-] [pipeline.tsv]
-  paying    <pipeline.tsv>
+usage: score-guild.sh <subcommand> [args]
+  seam:    pass-rate [results.tsv] [--strict-evidence] | coverage [results.tsv] [vrs.md] |
+           coverage --spec <spec.yaml> <vrs.md> | validate <venture.spec.yaml> |
+           verdict [results.tsv] [vrs.md|-] [pipeline.tsv] | paying <pipeline.tsv>
+  gates:   sources claims citations interviews icp vrs market competitors positioning offers
+           pricing economics cash alive studio funnel experiments assets consent sow delivery
+           regulatory ar compliance board decisions founders   (each: scripts/gates/<name>.sh;
+           inputs + one-line output contract in references/metrics.md)
 USAGE
 }
 
 sub="${1:-}"; [[ $# -gt 0 ]] && shift
 case "$sub" in
-  pass-rate) pass_rate "$@" ;;
-  coverage)  coverage "$@" ;;
-  validate)  validate "$@" ;;
-  verdict)   verdict "$@" ;;
-  paying)    paying "$@" ;;
+  pass-rate)   pass_rate "$@" ;;
+  coverage)    coverage "$@" ;;
+  validate)    validate "$@" ;;
+  verdict)     verdict "$@" ;;
+  paying)      paying "$@" ;;
+  # ---- evidence ----
+  sources)     run_gate sources "$@" ;;
+  claims)      run_gate claims "$@" ;;
+  citations)   run_gate citations "$@" ;;
+  # ---- discovery / market ----
+  interviews)  run_gate interviews "$@" ;;
+  icp)         run_gate icp "$@" ;;
+  vrs)         run_gate vrs "$@" ;;
+  market)      run_gate market "$@" ;;
+  competitors) run_gate competitors "$@" ;;
+  # ---- offer / pricing ----
+  positioning) run_gate positioning "$@" ;;
+  offers)      run_gate offers "$@" ;;
+  pricing)     run_gate pricing "$@" ;;
+  # ---- economics ----
+  economics)   run_gate economics "$@" ;;
+  cash)        run_gate cash "$@" ;;
+  alive)       run_gate alive "$@" ;;
+  studio)      run_gate studio "$@" ;;
+  # ---- gtm / marketing ----
+  funnel)      run_gate funnel "$@" ;;
+  experiments) run_gate experiments "$@" ;;
+  assets)      run_gate assets "$@" ;;
+  consent)     run_gate consent "$@" ;;
+  # ---- operations / finance / compliance ----
+  sow)         run_gate sow "$@" ;;
+  delivery)    run_gate delivery "$@" ;;
+  regulatory)  run_gate regulatory "$@" ;;
+  ar)          run_gate ar "$@" ;;
+  compliance)  run_gate compliance "$@" ;;
+  # ---- governance ----
+  board)       run_gate board "$@" ;;
+  decisions)   run_gate decisions "$@" ;;
+  founders)    run_gate founders "$@" ;;
   *) usage; exit 2 ;;
 esac

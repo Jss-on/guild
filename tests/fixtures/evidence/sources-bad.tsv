@@ -1,0 +1,4 @@
+id	tier	type	year	title	venue	locator	depth	status	retrieved_at	archived_url	content_hash	fetch_status
+S-1	T1	statute	2024	Republic Act No. 11976	lawphil.net	url:https://lawphil.net/statutes/repacts/ra2024/ra_11976_2024.html	full	read	2026-09-02	https://web.archive.org/web/20260902081500/https://lawphil.net/x	3f9c2a7d1b4e8c6a5d0f1e2b3c4d5e6f	archived
+S-1	T5	blog	2026	Duplicate id and bad tier	example	www.example.com/no-scheme	full	read	2026-09-02	https://web.archive.org/web/20260902081500/https://example.com	3f9c2a7d1b4e8c6a5d0f1e2b3c4d5e6f	live
+S-3	T2	official	2022	2022 ASPBI preliminary results	PSA	url:https://psa.gov.ph/content/2022-aspbi	full	read	2026-09-02	https://psa.gov.ph/content/2022-aspbi	deadbeefdeadbeef	captcha
