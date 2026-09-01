@@ -1,0 +1,6 @@
+# as_of: 2026-09-02
+invoice_no,invoice_date,client_id,client_name,client_tin,line_type,amount_ex_vat,vat_amount,gross,credit_term_days,due_date,ewt_rate,ewt_amount,expected_cash,paid_date,paid_amount,rail,rail_fee,form2307_received,form2307_quarter,status,demand_letter_date
+SI-2026-0031,2026-04-28,C-01,Mabuhay Cold Chain Corp.,008-123-456-000,service,250000,30000,280000,30,2026-05-28,10,25000,255000,2026-05-26,255000,PESONet,0,N,,paid,
+SI-2026-0033,2026-05-12,C-01,Mabuhay Cold Chain Corp.,008-123-456-000,service,300000,36000,336000,30,2026-06-11,10,30000,306000,2026-06-15,250000,PESONet,0,Y,2026Q2,paid,
+SI-2026-0041,2026-08-20,C-01,Mabuhay Cold Chain Corp.,008-123-456-000,service,150000,18000,168000,,2026-09-19,10,15000,153000,,,,,N,,open,
+SI-2026-0027,2026-03-02,C-06,Kalinga Foods Inc.,012-333-444-000,service,80000,9600,89600,30,2026-04-01,10,8000,81600,,,,,N,,open,

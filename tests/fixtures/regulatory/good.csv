@@ -1,0 +1,5 @@
+# as_of: 2026-09-02
+sku,product_name,has_radio,ntc_status,ntc_cert_no,ntc_model_name,marketed_model_name,bps_mandatory,ps_icc_status,cert_expiry,consumer_product,warranty_text_days,service_invoice_guaranty_days,service_line,template_text
+SKT-W1,Sukat W1 cold-room temperature logger (WiFi 2.4 GHz),Y,approved,ESD-RCE-2604-1187,SKT-W1,SKT-W1,N,,,N,,90,Y,"Sukat W1 — repairs: workmanship and replacement spare parts guaranteed for 90 days from the service invoice date (RA 7394 Art. 71). Defects within the 12-month product warranty are repaired or replaced within 30 days of a valid claim."
+LKB-LED-10,Lakbay 10 W LED work lamp (mains-powered),N,,,,Lakbay LED-10,Y,valid,2027-03-31,Y,365,,N,"12-month warranty against defects in materials and workmanship from the invoice date. Hidden defects: repair, replacement or refund at the buyer's election per RA 7394; repair within 30 days. Keep this invoice as proof of purchase."
+DLS-F2,Dalisay F2 inline flow sensor (wired RS-485),N,,,,Dalisay F2,N,,,N,,,N,B2B sale under MSA-2026-003; warranty and remedies per the governing SOW.

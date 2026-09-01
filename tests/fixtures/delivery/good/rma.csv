@@ -1,0 +1,4 @@
+# as_of: 2026-09-02
+rma_id,order_id,sku,received_date,defect_class,remedy,resolved_date,days_to_resolve
+RMA-2026-01,SO-2026-0412,SKT-W1,2026-06-15,major,replace,2026-06-24,9
+RMA-2026-02,SO-2026-0450,LKB-LED-10,2026-08-20,minor,repair,,
