@@ -1,0 +1,9 @@
+{
+  "version": "3.1.0",
+  "source": "board",
+  "status": "COMPLETE",
+  "timestamp": "2026-09-30T18:00:00+08:00",
+  "verdict": "CONTINUE",
+  "pack": "guild/board-260930-1800/board-pack.md",
+  "decisions_tsv": "board/decisions.tsv"
+}

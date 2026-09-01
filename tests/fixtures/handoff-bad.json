@@ -1,5 +1,6 @@
 {
-  "status": "COMPLETE",
-  "pass_rate": "lots",
-  "results_tsv": 42
+  "version": "3.1.0",
+  "source": "guild:build",
+  "status": "DONE",
+  "results_tsv": "guild/build-260902-1200/guild-results.tsv"
 }

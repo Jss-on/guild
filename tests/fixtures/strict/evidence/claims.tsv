@@ -1,0 +1,2 @@
+id	rq	claim	confidence	sources	evidence
+C-1	RQ-1	Metro Manila SMB manufacturers spend >= 8 h/week on manual inventory counts (n=12 interviews)	moderate	S-1,S-2	evidence:discovery/interviews.tsv

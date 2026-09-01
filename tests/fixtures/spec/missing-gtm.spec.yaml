@@ -1,0 +1,17 @@
+name: studio
+thesis: "a thesis"
+segment:
+  icp: "SMB manufacturers"
+acceptance:
+  evidence:
+    - { id: EV-1, assert: "unsourced claims == 0", weight: 2, traces: V-1, gate: true }
+  customer:
+    - { id: CU-1, assert: "interviews >= 12", weight: 2, traces: V-2, gate: true }
+  offer:
+    - { id: OF-1, assert: "positioning complete", weight: 1, traces: V-3 }
+  economics:
+    - { id: EC-1, assert: "GM >= 60 % worst corner", weight: 2, traces: V-4, gate: true }
+  operations:
+    - { id: OP-1, assert: "SOW complete", weight: 1, traces: V-6 }
+  governance:
+    - { id: GO-1, assert: "board pack current", weight: 1, traces: V-7 }

@@ -1,8 +1,12 @@
 {
-  "command": "guild:discover",
-  "status": "COMPLETE",
-  "pass_rate": 0.71,
-  "req_coverage": 1.0,
-  "interviews": 12,
-  "results_tsv": "guild/discover-260902-1200/guild-results.tsv"
+  "version": "3.1.0",
+  "source": "build",
+  "status": "CONVERGED",
+  "timestamp": "2026-09-02T12:00:00+08:00",
+  "results_tsv": "guild/build-260902-1200/guild-results.tsv",
+  "metric": { "name": "venture_pass_rate", "value": 1.0, "direction": "higher_is_better" },
+  "config": { "spec": "evals/venture/studio.spec.yaml", "iterations": 40 },
+  "coverage": { "req": 1.0 },
+  "verdict": "OPEN_FOR_BUSINESS",
+  "repo": "https://github.com/Jss-on/studio-venture"
 }
