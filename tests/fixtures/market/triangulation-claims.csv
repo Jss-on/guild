@@ -1,0 +1,7 @@
+# as_of: 2026-09-02
+# triangulation fixture — SEG-1 TAM by two methods 3.98× apart (bottom-up named count vs a global-analyst ARPU top-down);
+# SEG-2 has a single top-down SOM that applies an adoption share with no bottom-up claim anywhere in the segment.
+claim_id,stated_value,currency,computed_value,method,layer,segment_id
+TC-1,410580000,PHP,410580000,bottom_up,TAM,SEG-1
+TC-2,1635000000,PHP,1635180437,top_down,TAM,SEG-1
+TC-3,32700000,PHP,32703609,top_down,SOM,SEG-2

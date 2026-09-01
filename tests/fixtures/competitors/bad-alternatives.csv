@@ -1,0 +1,11 @@
+# as_of: 2026-09-02
+# market/alternatives.csv fixture (BAD) — planted defects (dossier §4, brief 02 G5, brief 03 G3.1):
+#   no status_quo / diy / do_nothing row at all (the register lists only vendors)
+#   ALT-5 has zero evidence_interview_ids — a phantom competitor; ALT-4 has one (below the ≥ 2 floor)
+#   ALT-8 carries an unknown type "vendor"
+alt_id,name,type,url,why_customer_uses_it,evidence_interview_ids,lost_deal_ids
+ALT-2,Zoho Inventory,direct,https://www.zoho.com/inventory/,"Cheap per-organisation plan billed in pesos; integrates with the Zoho Books their accountant already uses",I-3;I-8;I-14,D-1
+ALT-3,Odoo Inventory + MRP,direct,https://www.odoo.com/app/inventory,"Local partners implement it; one platform for accounting, purchasing and manufacturing orders",I-4;I-10;I-16;I-19,D-3
+ALT-4,SAP Business One via a local partner,indirect,https://www.sap.com/sea/products/erp/business-one.html,"The auditor knows it; a full ERP rather than an inventory tool",I-10,D-4
+ALT-5,Katana Cloud Inventory,direct,https://katanamrp.com/,"Built for small manufacturers — added from a competitor listicle, no interviewee mentioned it",-,-
+ALT-8,NetSuite,vendor,https://www.netsuite.com/,"Enterprise ERP the founders admire",I-9;I-11,-

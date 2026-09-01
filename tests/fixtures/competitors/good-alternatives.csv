@@ -1,0 +1,11 @@
+# as_of: 2026-09-02
+# market/alternatives.csv fixture (GOOD) — what NCR small/medium manufacturers with manual inventory do today, as named by interviewees.
+# evidence_interview_ids resolve in discovery/interviews.tsv; lost_deal_ids in gtm/pipeline.tsv. ALT-1 is the status quo (primary_alternative for positioning).
+alt_id,name,type,url,why_customer_uses_it,evidence_interview_ids,lost_deal_ids
+ALT-1,Manual spreadsheet counts,status_quo,-,"Free and already understood: paper stock cards on the floor and an Excel workbook the owner checks weekly",I-1;I-3;I-4;I-7;I-9;I-12;I-15;I-18,D-2
+ALT-2,Zoho Inventory,direct,https://www.zoho.com/inventory/,"Cheap per-organisation plan billed in pesos; integrates with the Zoho Books their accountant already uses",I-3;I-8;I-14,D-1
+ALT-3,Odoo Inventory + MRP,direct,https://www.odoo.com/app/inventory,"Local partners implement it; one platform for accounting, purchasing and manufacturing orders",I-4;I-10;I-16;I-19,D-3
+ALT-4,SAP Business One via a local partner,indirect,https://www.sap.com/sea/products/erp/business-one.html,"The auditor and the group accountant know it; a full ERP rather than an inventory tool, bought when a parent company insists",I-10;I-20,D-4
+ALT-5,Katana Cloud Inventory,direct,https://katanamrp.com/,"Built for small manufacturers: bill of materials and shop-floor tracking; USD card billing",I-7;I-17,-
+ALT-6,Google Sheets + AppSheet app built by a relative,diy,https://about.appsheet.com/,"No licence cost and built by a family member; breaks when that person leaves",I-2;I-6;I-13,-
+ALT-7,Do nothing — accept shrinkage and stock-outs,do_nothing,-,"Owner treats inventory loss as a cost of doing business; there is no budget line to spend against",I-5;I-11,D-5
