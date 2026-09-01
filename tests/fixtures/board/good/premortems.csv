@@ -1,0 +1,17 @@
+# as_of: 2026-09-02
+premortem_id,adr_id,date,failure_reason,risk_id,mitigation_ref
+PM-1,ADR-1,2026-02-10,A founder leaves in month eight and disputes the cliff,R-1,founders-agreement departure_terms
+PM-1,ADR-1,2026-02-10,Contribution imbalance in year two makes the equal split feel unfair and stalls decisions,R-1,decision_rights + advisor chair mediation
+PM-1,ADR-1,2026-02-10,IP created before incorporation is not covered by the assignment,R-6,ip-assignment-2026-02-14.pdf covers pre-incorporation work
+PM-1,ADR-1,2026-02-10,A hire is blocked by deadlock with no tie-break,R-1,deadlock clause: 14-day cooling then mediation
+PM-1,ADR-1,2026-02-10,Founder salary deferral during a cash pinch breeds resentment,R-3,cash floor rule + salary deferral ADR template
+PM-2,ADR-2,2026-02-18,Annual SEC and BIR compliance load eats a founder-week per quarter,R-7,compliance register + accountant retainer
+PM-2,ADR-2,2026-02-18,Incorporation and permit costs drain cash before the first deposit lands,R-3,13-week cash forecast with the SEC/LGU fees as dated rows
+PM-2,ADR-2,2026-02-18,Old sole-proprietor invoices confuse client AP and delay payment,R-7,retire sole-prop series; notify clients in writing
+PM-2,ADR-2,2026-02-18,Corporate MSA counterparty invites heavier redlines on liability,R-6,MSA v1 liability cap + lawyer sign-off
+PM-2,ADR-2,2026-02-18,Withholding bracket change (10/15 %) is missed in the price book,R-7,cwt_rate_expected column in price book
+PM-3,ADR-9,2026-08-15,Utilisation drops below 65 % after the hire and burn rises by PHP 60000 per month,R-5,hire only with backlog above 60 % of Q4 plan
+PM-3,ADR-9,2026-08-15,Anchor client milestone slips and the new salary is paid from reserve cash,R-3,30 % deposit; second anchor before start date
+PM-3,ADR-9,2026-08-15,Onboarding lands in the DVT quarter and slows certification,R-4,start date after DVT exit; CTO onboarding plan
+PM-3,ADR-9,2026-08-15,Pipeline coverage falls under 2x and there is no work for the hire,R-2,K4 sales sprint before the start date
+PM-3,ADR-9,2026-08-15,DEFAULT_ALIVE flips to 0 in the month the hire starts,R-5,K1/K7 recompute monthly; freeze if DEFAULT_DEAD

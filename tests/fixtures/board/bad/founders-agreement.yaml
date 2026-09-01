@@ -1,0 +1,28 @@
+# as_of: 2026-09-02
+# PLANTED DEFECTS: split sums to 90 · no cliff (cliff_months absent, no ADR) · IP not assigned
+# to the company · unsigned (no signed_date, no signed_pdf).
+company: Bayanihan Embedded Systems Inc.
+entity_type: stock corporation (SEC)
+split:
+  - founder: Jession Diwangan
+    pct: 45
+  - founder: Marco Reyes
+    pct: 45
+vesting_years: 4
+vesting_adr_ref: ""
+ip_assigned_to_company: false
+roles:
+  - founder: Jession Diwangan
+    role: CEO
+    accountable_for: "sales, customers, cash, board pack"
+  - founder: Marco Reyes
+    role: CTO
+    accountable_for: "delivery, hardware NPI, engineering hires"
+decision_rights:
+  - "unanimous: issue equity, SAFEs, advisor grants, or debt above PHP 500,000"
+  - "unanimous: change the equity split, vesting, or any founder's role"
+departure_terms:
+  good_leaver: "keeps vested shares; company option to buy back at fair value within 90 days"
+  bad_leaver: "unvested shares forfeited"
+signed_date: ""
+signed_pdf: ""

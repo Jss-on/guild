@@ -1,0 +1,10 @@
+# as_of: 2026-09-02
+# PLANTED DEFECTS: R-3 has no owner · R-6 next_review is in the past (review overdue).
+id,category,description,probability,impact,score,trigger,owner,mitigation,contingency,status,last_reviewed,next_review
+R-1,people,Founder departure or deadlock before the cliff,2,5,10,either founder misses two consecutive weekly syncs or gives notice,Jession Diwangan,vesting + decision rights + monthly founder 1:1,buy-back clause; advisor chair mediates,open,2026-08-28,2026-09-25
+R-2,market,Beachhead segment buys slower than the 60-day cycle assumed,3,4,12,median sales cycle above 90 days on five or more deals,Jession Diwangan,paid discovery sprint first; champion + economic buyer named,widen the segment via a new ADR,open,2026-08-28,2026-09-25
+R-3,cash,Anchor client Mabuhay Foods above 25 % of trailing revenue; one late milestone starves cash,4,4,16,concentration above 25 % two months running or any invoice more than 45 days overdue,,second anchor in pipeline; 30 % deposits,SB Corp expansion loan; founder salary deferral,open,2026-08-28,2026-09-25
+R-4,delivery,Hardware NPI slips at DVT because NTC type approval is pending,3,4,12,DVT exit slips more than two weeks,Marco Reyes,pre-certified module; NTC file at EVT,ship the wired variant first,mitigating,2026-08-28,2026-09-25
+R-5,people,Junior hire ahead of default-alive pushes runway below 12 months,2,4,8,DEFAULT_ALIVE 0 or runway under 12 months at the hire decision,Marco Reyes,hire only with DEFAULT_ALIVE 1 (K7),defer start date one quarter,open,2026-08-28,2026-09-25
+R-6,legal,Client MSA redline removes IP assignment on payment,2,4,8,any redline touching the IP or liability sections of MSA v1,Jession Diwangan,MSA v1 with lawyer sign-off,walk away from the deal,open,2026-07-25,2026-08-20
+R-7,compliance,EOPT invoice or 2307 mismatch turns withholding into short-payments,3,3,9,any paid invoice with EWT and no 2307 by day 20 after quarter end,Jession Diwangan,AR ledger with 2307 tracking,accountant follow-up letter,monitoring,2026-08-28,2026-09-25

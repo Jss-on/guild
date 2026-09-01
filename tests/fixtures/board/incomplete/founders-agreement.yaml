@@ -1,0 +1,41 @@
+# as_of: 2026-09-02
+# founders-agreement.yaml — HUMAN-ENTERED machine-readable summary of the signed instrument.
+# Schema: references/governance-protocol.md §1. Validator: score-guild.sh founders.
+company: Bayanihan Embedded Systems Inc.
+entity_type: stock corporation (SEC)
+registered_on: 2026-02-27
+split:
+  - founder: Jession Diwangan
+    pct: 50
+  - founder: Marco Reyes
+    pct: 50
+vesting_years: 4
+cliff_months: 12
+vesting_adr_ref: ""
+vesting_start: 2026-02-14
+ip_assigned_to_company: true
+ip_assignment_doc: evidence:board/ip-assignment-2026-02-14.pdf
+roles:
+  - founder: Jession Diwangan
+    role: CEO
+    accountable_for: "sales, customers, cash, board pack"
+  - founder: Marco Reyes
+    role: CTO
+    accountable_for: "delivery, hardware NPI, engineering hires"
+decision_rights:
+  - "unanimous: issue equity, SAFEs, advisor grants, or debt above PHP 500,000"
+  - "unanimous: change the equity split, vesting, or any founder's role"
+  - "unanimous: hire or terminate an employee; sign a lease"
+  - "unanimous: any contract above PHP 1,000,000 TCV or with unlimited liability"
+  - "CEO decides: pricing within the price book, pipeline priorities, marketing spend within budget"
+  - "CTO decides: architecture, tooling, subcontractor selection within the SOW budget"
+  - "deadlock: 14-day cooling period, then the advisor chair mediates; no unilateral action"
+departure_terms:
+  good_leaver: "keeps vested shares; company option to buy back at fair value within 90 days"
+  bad_leaver: "unvested shares forfeited; vested shares bought back at par or fair value, whichever is lower"
+  notice_months: 3
+  non_compete_months: 12
+  ip_survives: true
+signed_date: 2026-02-14
+signed_pdf: evidence:board/founders-agreement-signed-2026-02-14.pdf
+witnesses: 2

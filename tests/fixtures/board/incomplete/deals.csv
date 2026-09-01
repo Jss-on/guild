@@ -1,0 +1,8 @@
+# as_of: 2026-09-02
+deal_id,account,segment,stage,amount_acv,currency,probability,owner,next_action,next_action_date,last_activity_at,expected_close_date
+DL-1,Mabuhay Foods Corp,fnb_retrofit,won,1850000,PHP,100,Jession Diwangan,phase 2 kickoff on line 3,2026-09-08,2026-08-28,2026-08-15
+DL-2,San Rafael Beverage,fnb_retrofit,proposal,1400000,PHP,60,Jession Diwangan,walkthrough with the plant manager,2026-09-10,2026-08-27,2026-10-15
+DL-3,Laguna Dairy Co-op,fnb_retrofit,meeting,900000,PHP,40,Jession Diwangan,send the paid discovery SOW,2026-09-05,2026-08-26,2026-11-10
+DL-4,Batangas Cannery,fnb_retrofit,proposal,2200000,PHP,50,Jession Diwangan,answer the EWT and 2307 question from AP,2026-09-09,2026-08-25,2026-10-30
+DL-5,Cavite Snacks Mfg,fnb_retrofit,lead,1200000,PHP,20,Jession Diwangan,qualify against the ICP checklist,2026-09-12,2026-08-20,2026-12-04
+DL-6,Tarlac Agro Processing,fnb_retrofit,contacted,800000,PHP,25,Jession Diwangan,re-engage or disqualify per staleness rule,2026-09-05,2026-07-28,2026-12-18
