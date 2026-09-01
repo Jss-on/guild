@@ -1,0 +1,9 @@
+# as_of: 2026-09-02
+send_id,sequence_id,template_id,word_count,contact_id,channel,purpose,sent_at,human_approved_by,human_approved_at,follow_up_n,batch_size,planned_follow_ups
+S-B01,,newsletter-2026-08,95,K-999,email,marketing,2026-08-21,M. Reyes,2026-08-20,0,40,
+S-B02,,promo-blast-v1,88,K-101,email,marketing,2026-08-22,,,0,35,
+S-B03,,viber-launch-note,60,K-102,viber,marketing,2026-08-25,M. Reyes,2026-08-25,0,10,
+S-B04,,newsletter-2026-08,95,K-103,email,marketing,2026-08-24,M. Reyes,2026-08-23,0,40,
+S-B05,SEQ-Z1,founder-long-v1,128,K-201,email,outreach; basis: legitimate_interest,2026-08-05,M. Reyes,2026-08-05,0,1,1
+S-B06,,promo-blast-v1,90,K-101,email,marketing,2026-08-29,M. Reyes,2026-08-29,0,400,
+S-B07,,sms-cold-v1,30,K-105,sms,marketing,2026-08-30,M. Reyes,2026-08-30,0,25,

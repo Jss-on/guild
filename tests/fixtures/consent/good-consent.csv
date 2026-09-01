@@ -1,0 +1,7 @@
+# as_of: 2026-09-02
+contact_id,source,timestamp,consent_text_version,purposes,channels,evidence,withdrawn_at
+K-101,web_form_checkbox,2026-06-10,v2,marketing,email;viber,forms/consent/K-101.png,
+K-102,double_opt_in,2026-05-22,v2,marketing;newsletter,email,forms/consent/K-102.eml,
+K-103,web_form_checkbox,2026-04-02,v1,marketing,email,forms/consent/K-103.png,2026-08-20
+K-104,event_signup_form,2026-07-19,v2,marketing,email;sms,forms/consent/K-104.pdf,
+K-105,double_opt_in,2026-08-01,v2,newsletter,email,forms/consent/K-105.eml,

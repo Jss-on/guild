@@ -1,0 +1,9 @@
+# as_of: 2026-09-02
+asset_id,type,version,path,icp_id,offer_id,price_ref,claims_ref,release_form_on_file,price_on_request,last_reviewed
+A-001,landing,3,landing.md,smb-mfg,OFF-BUILD-STD,PB-2026-02,evidence/claims.tsv,,N,2026-08-15
+A-002,one_pager,2,one-pager.md,smb-mfg,OFF-BUILD-STD,PB-2026-02,evidence/claims.tsv,,N,2026-08-15
+A-003,deck,4,deck.md,smb-mfg,OFF-BUILD-STD,,evidence/claims.tsv,,Y,2026-08-20
+A-004,case_study,1,case-study.md,smb-mfg,OFF-BUILD-STD,PB-2026-02,evidence/claims.tsv,Y,N,2026-08-22
+A-005,pricing,2,pricing.md,smb-mfg,OFF-BUILD-STD,PB-2026-02,evidence/claims.tsv,,N,2026-08-25
+A-006,email_seq,3,email-seq.md,smb-mfg,OFF-BUILD-STD,PB-2026-02,evidence/claims.tsv,,N,2026-08-18
+A-007,listing,1,listing.md,smb-mfg,OFF-KIT-01,PB-2026-05,evidence/claims.tsv,,N,2026-08-28
