@@ -1,0 +1,105 @@
+# icp.yaml — ideal customer profile for the elected segment (guild:discover fixture, good)
+# Layout: references/discovery-protocol.md §8. Every leaf = { value, evidence_interview_ids }.
+# Interview ids resolve in the human-entered ledger (here tests/fixtures/interviews/good.tsv);
+# ICP leaves cite only the ICP segment, anti-ICP rules may cite any segment.
+segment_id: smb-mfg
+version: 1
+as_of: 2026-09-02
+market_type: resegmented_niche
+firmographics:
+  industry:
+    value: "Make-to-stock manufacturers in food, plastics, packaging, metal fabrication and garments (PSIC C10-C32)"
+    evidence_interview_ids: [I-1, I-2, I-4, I-5, I-7]
+  size_band:
+    value: "20-199 employees, single production site"
+    evidence_interview_ids: [I-1, I-2, I-5, I-6, I-10]
+  geography:
+    value: "Metro Manila industrial belt (Valenzuela, Caloocan, Pasig, Marikina, Quezon City, Taguig)"
+    evidence_interview_ids: [I-1, I-3, I-4, I-9]
+  revenue_band:
+    value: "PHP 20M-200M annual sales (owner-stated, unverified)"
+    evidence_interview_ids: [I-5, I-7, I-10, I-13]
+roles:
+  economic_buyer:
+    value: "Owner / general manager"
+    evidence_interview_ids: [I-1, I-7, I-9, I-14]
+  champion:
+    value: "Plant or operations manager who runs the count"
+    evidence_interview_ids: [I-2, I-8, I-10]
+  decision_maker_role:
+    value: "Owner signs anything above PHP 50k; the finance head is consulted on subscriptions"
+    evidence_interview_ids: [I-1, I-7, I-12, I-14]
+  relationship_owner:
+    value: "founder-1, in person, Taglish"
+    evidence_interview_ids: [I-1, I-3, I-7]
+technographics:
+  - value: "Excel or Google Sheets stock cards updated weekly"
+    evidence_interview_ids: [I-1, I-2, I-12, I-14]
+  - value: "Paper bin cards or notebooks on the floor"
+    evidence_interview_ids: [I-2, I-4, I-11]
+  - value: "No ERP or WMS; accounting only in a bookkeeping tool"
+    evidence_interview_ids: [I-1, I-5, I-13]
+pains:
+  - value: "Month-end physical count consumes 16-32 staff-hours"
+    evidence_interview_ids: [I-1, I-10, I-12, I-14]
+  - value: "Stockouts force emergency purchases at a 12-18 % premium or cost an order"
+    evidence_interview_ids: [I-3, I-7, I-9]
+  - value: "Variances surface only at audit or quarter close"
+    evidence_interview_ids: [I-5, I-8, I-13]
+  - value: "Expired or wrong-lot material written off"
+    evidence_interview_ids: [I-4, I-6, I-11]
+triggers:
+  push:
+    - value: "A stockout that cost an order or forced a premium purchase"
+      evidence_interview_ids: [I-3, I-7, I-9]
+    - value: "An audit variance the owner had to explain"
+      evidence_interview_ids: [I-5, I-8, I-13]
+  pull:
+    - value: "A live count the owner can check from a phone before quoting"
+      evidence_interview_ids: [I-3, I-7, I-10]
+  anxiety:
+    - value: "Floor staff will resist scanning and the system will be abandoned"
+      evidence_interview_ids: [I-2, I-6, I-12]
+    - value: "Another monthly subscription with no local support"
+      evidence_interview_ids: [I-4, I-10, I-14]
+  habit:
+    - value: "The Friday Excel update and the owner's daily floor walk"
+      evidence_interview_ids: [I-1, I-11, I-12]
+buying_process:
+  procurement_mode:
+    value: private
+    evidence_interview_ids: [I-1, I-7, I-10, I-14]
+  payment_terms_expected:
+    value: "50 % deposit, then monthly billing; Net 15 on invoices"
+    evidence_interview_ids: [I-7, I-10, I-14]
+  withholding_class:
+    value: "Corporate clients withhold 2 % (contractor) or 10 % (professional fees) and issue BIR Form 2307"
+    evidence_interview_ids: [I-5, I-10, I-13]
+beachhead_criteria:
+  burning_pain:
+    value: "Count day and stockouts named unprompted by 9 of 14 interviewees"
+    evidence_interview_ids: [I-1, I-3, I-7, I-9, I-10]
+  willingness_to_pay:
+    value: "Three money commitments (PHP 10k-25k) before any product exists"
+    evidence_interview_ids: [I-7, I-10, I-14]
+  growth:
+    value: "Owners adding a second shift or line in 2026"
+    evidence_interview_ids: [I-2, I-7, I-10]
+  access:
+    value: "Reachable in person within Metro Manila; four peer introductions obtained"
+    evidence_interview_ids: [I-3, I-9, I-12]
+  expandable:
+    value: "Same count problem across food, plastics and packaging; provincial plants of the same owners"
+    evidence_interview_ids: [I-2, I-11, I-14]
+anti_icp:
+  disqualifiers:
+    - rule: "Already runs a WMS with barcode scanners (accuracy is contractual and the tooling is paid for)"
+      evidence_interview_ids: [I-15, I-16, I-17]
+    - rule: "Vendor selection is run by a principal or a tender, not by the owner"
+      evidence_interview_ids: [I-16, I-18]
+    - rule: "Pays for a stock tool already and is satisfied with its accuracy"
+      evidence_interview_ids: [I-16, I-17]
+    - rule: "The count is a quarter-close accounting event only, with no owner-level pain"
+      evidence_interview_ids: [I-5, I-13]
+    - rule: "Inbound government lead without a PhilGEPS-published notice (impersonation scams)"
+      evidence_claim_ids: [C-31]
