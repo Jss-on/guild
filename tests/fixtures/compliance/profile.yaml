@@ -1,0 +1,26 @@
+# as_of: 2026-09-02
+# compliance/profile.yaml - the company profile applies_if expressions are evaluated against.
+# Fixture: a VAT-registered OPC engineering studio in Metro Manila, registered 2026-03-15,
+# 2 employees since 2026-06-01, calendar fiscal year, no online sales.
+name: "Fixture Engineering Studio OPC"
+entity_type: opc
+has_employees: true
+employee_count: 2
+first_hire_date: 2026-06-01
+gross_sales_12m: 3600000
+vat_registered: true
+eight_pct_elected: false
+sells_online: false
+foreign_equity: 0
+total_assets: 1500000
+total_liabilities: 400000
+fiscal_year_end: 12-31
+registration_date: 2026-03-15
+withholding_agent: true
+bmbe_elected: false
+books_method: manual
+spi_records: 0
+sells_consumer_products: false
+trademark_filed: false
+city: "Quezon City"
+region: NCR
