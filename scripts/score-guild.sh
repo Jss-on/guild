@@ -6,9 +6,10 @@
 #   validate  <venture.spec.yaml>               → discover → build contract        "VALIDATION: VALID|INVALID|ERROR"
 #   verdict   [results.tsv] [vrs.md|-] [pipeline.tsv]
 #                                               → NOT_READY | OPEN_FOR_BUSINESS | FIRST_CUSTOMER
+#   paying    <pipeline.tsv>                    → won rows with invoice + payment evidence "PAYING_CUSTOMERS: N"
 #
-# Planned gates — each lands together with its fixture test; the frozen
-# scripts/score-e2e-capability.sh names the rows:
+# Planned gates — each lands together with its fixture test AND a good/bad fixture pair the
+# frozen scripts/score-e2e-capability.sh executes (references/metrics.md has the full surface):
 #   sources    <sources.tsv>                    → source-ledger validity (forge research schema)  "SOURCES: VALID|INVALID …"
 #   claims     <claims.tsv> <sources.tsv>       → claims-ledger validity (tier floors, anchoring) "CLAIMS: VALID|INVALID …"
 #   citations  <doc.md> <claims.tsv>            → numeric claims in a doc without a [C-n] ref     "UNSOURCED_CLAIMS: N"
@@ -291,13 +292,20 @@ verdict() {
   fi
 }
 
+paying() {
+  local pipe="${1:?usage: paying <pipeline.tsv>}"
+  [[ -f "$pipe" ]] || die "paying: missing pipeline $pipe"
+  echo "PAYING_CUSTOMERS: $(paying_count "$pipe")"
+}
+
 usage() {
   cat >&2 <<'USAGE'
-usage: score-guild.sh {pass-rate|coverage|validate|verdict} [args]
+usage: score-guild.sh {pass-rate|coverage|validate|verdict|paying} [args]
   pass-rate [results.tsv] [--strict-evidence]
   coverage  [results.tsv] [vrs.md]  |  coverage --spec <spec.yaml> <vrs.md>
   validate  <venture.spec.yaml>
   verdict   [results.tsv] [vrs.md|-] [pipeline.tsv]
+  paying    <pipeline.tsv>
 USAGE
 }
 
@@ -307,5 +315,6 @@ case "$sub" in
   coverage)  coverage "$@" ;;
   validate)  validate "$@" ;;
   verdict)   verdict "$@" ;;
+  paying)    paying "$@" ;;
   *) usage; exit 2 ;;
 esac
