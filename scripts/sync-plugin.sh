@@ -49,6 +49,15 @@ actual() {
   find claude-plugin -type f | sed 's|^\./||' | sort
 }
 
+# The expected set is materialised ONCE into a temp file. Never pipe `expected` into `grep -q`:
+# grep exits on the first match, the producer takes SIGPIPE, and under `pipefail` the pipeline
+# reports failure — a real mirror file then shows up as an "orphan" (seen on Linux CI; Windows
+# Git Bash masks it).
+EXPECTED_FILE="$(mktemp)"
+expected > "$EXPECTED_FILE"
+trap 'rm -f "$EXPECTED_FILE"' EXIT
+is_expected() { grep -qxF -- "$1" "$EXPECTED_FILE"; }
+
 # --- check mode --------------------------------------------------------------
 if [[ $CHECK -eq 1 ]]; then
   bad=0
@@ -58,7 +67,7 @@ if [[ $CHECK -eq 1 ]]; then
     elif ! cmp -s "$src" "$dst"; then echo "diverged: $dst != $src" >&2; bad=$((bad + 1)); fi
   done
   while IFS= read -r f; do
-    expected | grep -qxF "$f" || { echo "orphan in plugin (no canonical source): $f" >&2; bad=$((bad + 1)); }
+    is_expected "$f" || { echo "orphan in plugin (no canonical source): $f" >&2; bad=$((bad + 1)); }
   done < <(actual)
   [[ -f claude-plugin/.claude-plugin/plugin.json ]] || { echo "missing plugin.json" >&2; bad=$((bad + 1)); }
   if [[ $bad -eq 0 ]]; then echo "PLUGIN_PARITY: OK"; exit 0
@@ -76,7 +85,7 @@ for p in "${pairs[@]}"; do
 done
 # prune orphans (stale copies of deleted canonical files)
 while IFS= read -r f; do
-  if ! expected | grep -qxF "$f"; then
+  if ! is_expected "$f"; then
     rm -f "$f"
     echo "pruned orphan: $f" >&2
   fi
