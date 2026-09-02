@@ -10,6 +10,9 @@ Distribution. Nothing in the harness changed; the frozen scorer still reads 66/6
 - **`scripts/install.sh`** — `--claude | --opencode | --codex`, `--global | --local`, `--force`,
   same shape as AutoForge's installer; Claude Code file installs copy the byte-mirror plugin
   payload (gates included).
+- **README "Which command, when"** — scenario → command → what the loop produces → what only a
+  human can do; the normal order (discover → build → board → improve/evals); the forge/anvil
+  hand-off; what not to reach for.
 - **`scripts/transform.sh`** — generates the OpenCode tree (`.opencode/`: `/guild_<sub>` flat
   commands, `question` tool name) and the Codex trees (`.agents/skills/guild`, `plugins/guild`,
   `$guild <sub>` mentions, local marketplace) from the canonical `.claude/` source, with the seam
