@@ -1,7 +1,7 @@
 {
   "name": "guild",
   "description": "AutoForge's business sibling — autonomous business building from idea to first paying customer. Commands: guild (metric loop), discover, build, board, improve, evals. Mechanical gates: claims-ledger citations, interview ledger quotas, ICP trace, unit-economics assertions at corners, pricing floor/band, funnel from a human-entered pipeline, compliance register, board pack derived from ledgers. Gating evidence dimension; every send/spend/sign/file is human-gated.",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "author": {
     "name": "Jss-on",
     "url": "https://github.com/Jss-on"

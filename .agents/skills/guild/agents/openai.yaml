@@ -1,0 +1,8 @@
+interface:
+  display_name: "Guild"
+  short_description: "Autonomous business-building harness — idea to first paying customer, then a standing board"
+  brand_color: "#B45309"
+  default_prompt: "Set a thesis, run discovery, let Codex loop until the venture is OPEN_FOR_BUSINESS"
+
+policy:
+  allow_implicit_invocation: true

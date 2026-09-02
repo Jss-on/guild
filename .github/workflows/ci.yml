@@ -12,5 +12,7 @@ jobs:
         run: bash tests/score.test.sh
       - name: Plugin mirror parity
         run: bash scripts/sync-plugin.sh --check
+      - name: Platform mirrors (OpenCode / Codex) up to date
+        run: bash scripts/transform.sh --check
       - name: E2E capability (informational)
         run: bash scripts/score-e2e-capability.sh

@@ -1,0 +1,20 @@
+{
+  "name": "guild-local",
+  "interface": {
+    "displayName": "Guild Local Plugins"
+  },
+  "plugins": [
+    {
+      "name": "guild",
+      "source": {
+        "source": "local",
+        "path": "./plugins/guild"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.1 — 2026-09-02
+
+Distribution. Nothing in the harness changed; the frozen scorer still reads 66/66.
+
+- **README Installation section**: Claude Code plugin marketplace install + update
+  (`/plugin marketplace add Jss-on/guild`, `/plugin install guild@guild`, `/plugin marketplace
+  update guild`), OpenCode and Codex installs, manual copy, requirements.
+- **`scripts/install.sh`** — `--claude | --opencode | --codex`, `--global | --local`, `--force`,
+  same shape as AutoForge's installer; Claude Code file installs copy the byte-mirror plugin
+  payload (gates included).
+- **`scripts/transform.sh`** — generates the OpenCode tree (`.opencode/`: `/guild_<sub>` flat
+  commands, `question` tool name) and the Codex trees (`.agents/skills/guild`, `plugins/guild`,
+  `$guild <sub>` mentions, local marketplace) from the canonical `.claude/` source, with the seam
+  scripts + gates inside every skill tree; `--check` is a CI gate against stale mirrors.
+
 ## 0.1.0 — 2026-09-02
 
 End-to-end capability: the frozen 66-row scorer reads **1.00** (baseline was 15/66 = 0.23).
