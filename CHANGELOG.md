@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.1.0 — 2026-09-02
+
+End-to-end capability: the frozen 66-row scorer reads **1.00** (baseline was 15/66 = 0.23).
+Built by a forge classic loop (`forge/loop-260902-0207/`): 11 iterations, 11 kept, 0 discarded —
+3 by hand (evidence seam, gate helper lib, commands + template + exemplar) and 6 domain branches
+built in parallel worktrees and merged one per iteration, Guard (all test suites + plugin parity)
+green at every step.
+
+- **13 protocols** in `references/`: evidence, discovery, venture-requirements, market, offer,
+  pricing, economics, gtm, marketing, operations, finance, compliance, governance — each written
+  from its research brief with graded `[S#]` citations, ledger schemas, thresholds (env-overridable
+  policy defaults), human sign-off rows, early irreversibles and failure modes.
+- **27 mechanical gates** in `scripts/gates/` dispatched by `score-guild.sh`: sources, claims,
+  citations, interviews, icp, vrs, market, competitors, positioning, offers, pricing, economics,
+  cash, alive, studio, funnel, paying, experiments, assets, consent, sow, delivery, regulatory,
+  ar, compliance, board, decisions, founders — every gate fixture-tested (333 test cases across
+  12 suites) and executed by the frozen scorer on a good/bad pair whose bad fixture carries a
+  planted defect the gate must catch.
+- **6 commands**: `/guild` (classic metric loop with the business ratchet), `/guild:discover`
+  (domain recon → founder interview → drafted scripts/consent → human-entered ledger → VRS →
+  validate-clean spec), `/guild:build` (charter with 16 early irreversibles → 12 gated phases →
+  launch human-gated → first paying customer → board), `/guild:board` (pack from ledgers,
+  DEFAULT_ALIVE, kill rows, CONTINUE|PIVOT|KILL), `/guild:improve` (named metrics under a hard
+  non-regression ratchet), `/guild:evals`.
+- **Venture template** (`templates/guild-venture/`) whose header-only ledgers pass their own gates,
+  and the **studio exemplar spec** (`evals/venture/studio.spec.yaml`) that validates.
+- Deterministic dating throughout (`# as_of:` + `GUILD_TODAY`) so gates and the frozen scorer
+  never decay with the calendar; helper lib `scripts/gates/_lib.sh` (YAML-subset/CSV→JSON,
+  date arithmetic).
+
 ## 0.0.2 — 2026-09-02
 
 Research pass + forge-grade seam. The scorer is re-frozen at 66 rows before the improvement loop

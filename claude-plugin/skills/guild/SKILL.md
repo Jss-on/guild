@@ -1,7 +1,7 @@
 ---
 name: guild
 description: "Autonomous business-building iteration: modify, verify (citations/interviews/economics/funnel/compliance), keep/discard against evidence-anchored metrics — idea to first paying customer, then a standing board"
-version: 0.0.2
+version: 0.1.0
 ---
 
 # Guild — Autonomous Goal-directed Business Iteration
@@ -67,10 +67,11 @@ Print a banner on every invocation: `[guild] mode: classic | build | wizard`.
 | `/guild:improve` | Optimization loop on an existing venture: maximize `conversion` \| `gross_margin` \| `ltv_cac` \| `utilization`, minimize `cac` \| `payback` \| `dso`, under a hard non-regression ratchet (evidence clean ∧ economics close ∧ compliance intact) | 20 |
 | `/guild:evals` | Analyze iteration results: trends, plateaus, regressions, funnel + cash trajectories | N/A |
 
-**Status v0.0.2:** the scoring seam ships (`pass-rate`, `coverage`, `validate`, `verdict`,
-`paying`) with the research dossier and benchmarks annex. The commands, protocols and 27 domain
-gates above are the target state, defined row by row by the frozen `scripts/score-e2e-capability.sh`
-(66 rows).
+**Status v0.1.0:** fully capable — the frozen `scripts/score-e2e-capability.sh` reads 66/66
+(1.00): all 13 protocols, all 27 gates (fixture-tested, planted-defect-verified), all 6 commands,
+the venture template and the studio exemplar ship. Next engagement: dogfood `/guild:discover` on
+the studio itself, then `/guild:build Spec: evals/venture/studio.spec.yaml` in its own private
+venture repo.
 
 ## The Dimensions (scoring contract)
 

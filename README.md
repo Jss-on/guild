@@ -8,7 +8,7 @@ Guild is the product; `guild` is its command namespace — every command is `/gu
 
 [Forge](https://github.com/Jss-on/autoforge) builds software. [Anvil](https://github.com/Jss-on/anvil) builds hardware. **Guild finds who pays for them, at what price, and how.**
 
-![Version](https://img.shields.io/badge/version-0.0.2-blue.svg)
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
 ![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)
 
 *"Set the THESIS → The agent runs the LOOP → You wake up to a board pack."*
@@ -38,17 +38,19 @@ Guild is the product; `guild` is its command namespace — every command is `/gu
 
 ---
 
-## Status — v0.0.2 skeleton + research
+## Status — v0.1.0 fully capable
 
-The gate exists, the harness does not yet. Shipped: the scoring seam (`score-guild.sh pass-rate |
-coverage | validate | verdict | paying` with strict evidence and forge-grade flooring), its
-self-test, the plugin mirror, the doctor, the handoff validator (schema v3.1.0), the **research
-dossier** (`research/business-process-research-260902.md` — 12 domain briefs, ~560 sources), the
-**benchmarks annex**, and the frozen 66-row end-to-end capability scorer that defines "done".
-Everything else — 13 protocols, 27 domain gates with fixture tests, 6 commands, the venture template,
-the studio exemplar — lands through the forge loop configured in
-`plans/reports/guild-business-harness-plan-260902.md` (autoresearch repo). Baseline: run
-`bash scripts/score-e2e-capability.sh`.
+The frozen 66-row end-to-end capability scorer reads **1.00** (`bash scripts/score-e2e-capability.sh`).
+Shipped: the scoring seam (`score-guild.sh` — pass-rate with strict evidence and forge-grade
+flooring, coverage, validate, verdict, paying) plus **27 domain gates** in `scripts/gates/`
+(fixture-tested by 333 cases across 12 suites; every gate proven against a planted-defect
+fixture), **13 protocols** written from the research dossier
+(`research/business-process-research-260902.md` — 12 domain briefs, ~560 graded sources), the
+**benchmarks annex**, **6 commands** (`/guild`, `/guild:discover`, `/guild:build`, `/guild:board`,
+`/guild:improve`, `/guild:evals`), the venture template whose header-only ledgers pass their own
+gates, and the studio exemplar spec that validates. Built by a forge loop in 11 kept iterations
+(baseline 0.23 → 1.00; `forge/loop-260902-0207/`). Next: dogfood `/guild:discover` on the studio
+itself, then `/guild:build Spec: evals/venture/studio.spec.yaml` in its own private venture repo.
 
 ## Why This Exists
 
